@@ -1,0 +1,19 @@
+<template>
+  <div class="project-card">
+    <div onclick={navigateToProject} aria-label="Single Project">
+      <div class="img">
+        <!-- sldsValidatorIgnoreNextLine -->
+        <img src={img} alt="project" />
+      </div>
+      <div class="title">
+        <p>{ title }</p>
+      </div>
+      <div class="tags">
+        <span> { tags } </span>
+      </div>
+      <div class="type">
+        <p>{ ptype }</p>
+      </div>
+    </div>
+  </div>
+</template>

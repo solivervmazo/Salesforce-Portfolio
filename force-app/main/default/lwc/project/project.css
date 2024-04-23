@@ -1,0 +1,46 @@
+@import "c/tailwindCss";
+.md h1,
+.md h2,
+.md h3,
+.md h4,
+.md h5,
+.md h6,
+p,
+.md ul,
+.md ol,
+.md table {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.md pre {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.md h1 {
+  font-size: 3.5em;
+  line-height: 4rem;
+}
+.md h2 {
+  font-size: 3em;
+  line-height: 3.5rem;
+}
+.md h3 {
+  font-size: 2.5em;
+  line-height: 3rem;
+}
+.md h4 {
+  font-size: 2em;
+  line-height: 2.5rem;
+}
+.md h5 {
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+.md h6 {
+  font-size: 1em;
+  line-height: 1.5rem;
+}
+.md h5,
+.md h6 {
+  font-weight: bold;
+}

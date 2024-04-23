@@ -1,0 +1,11 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Credentials",
+  "contentBody" : {
+    "activeViewId" : "Credentials",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-credentials",
+    "urlPrefix" : "credentials"
+  }
+}

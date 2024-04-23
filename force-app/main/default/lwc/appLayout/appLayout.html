@@ -1,0 +1,23 @@
+<template>
+  <div class="app-layout">
+    <div class="app-layout-inner">
+      <div class="app-layout-header">
+        <header data-f6-region class="app-nav-sticky">
+          <slot name="header"></slot>
+        </header>
+      </div>
+      <div class="app-layout-main">
+        <main data-f6-region>
+          <div class="content-container">
+            <slot></slot>
+          </div>
+        </main>
+      </div>
+      <div class="app-layout-footer">
+        <footer>
+          <slot name="footer"></slot>
+        </footer>
+      </div>
+    </div>
+  </div>
+</template>

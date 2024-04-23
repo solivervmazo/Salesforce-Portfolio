@@ -1,0 +1,7 @@
+<template>
+  <div class="projects card-grid">
+    <template for:each={projects} for:item="project">
+      <c-project-card key={project.id} project={project}> </c-project-card>
+    </template>
+  </div>
+</template>

@@ -1,0 +1,7 @@
+<template>
+  <div class="about-me">
+    <template for:each={bios} for:item="bio">
+      <p key={bio.id}>{bio.bio}</p>
+    </template>
+  </div>
+</template>

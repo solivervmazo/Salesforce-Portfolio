@@ -1,0 +1,67 @@
+<template>
+  <div class="project">
+    <div class="project-header">
+      <p class="p-title">{project.title}</p>
+      <div class="p-sub">
+        <div class="p-type">
+          <i class="fa-regular fa-lightbulb"></i>
+          <span>{project.type}</span>
+        </div>
+        <div class="p-date">
+          <i class="fa-regular fa-clock"></i>
+          <span>{project.date}</span>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <template for:each={gallery} for:item="img">
+        <img key={img.id} src={img.href} alt={img.alt} />
+      </template>
+    </div>
+    <div class="content">
+      <div class="info">
+        <template lwc:if={project.details.guided}>
+          <div class="sub">
+            <p class="heading">{project.details.guided.heading}</p>
+            <ul>
+              <li>
+                <a href={project.details.guided.courseUrl}>
+                  {project.details.guided.courseTitle}
+                </a>
+              </li>
+              <li>
+                <span>Title:&nbsp;</span>
+                <a
+                  class="a-link"
+                  href={project.details.guided.details.course.url}
+                  target="_blank"
+                >
+                  { project.details.guided.details.course.name }
+                </a>
+              </li>
+            </ul>
+          </div>
+        </template>
+        <template lwc:if={project.details.objective}>
+          <div class="sub">
+            <p class="heading">{project.details.objective.heading}</p>
+            <p class="regular">{project.details.objective.text}</p>
+          </div>
+        </template>
+        <template lwc:if={project.details.tags}>
+          <div class="sub">
+            <p class="heading">{project.details.tags.heading}</p>
+            <p class="regular">{tags}</p>
+          </div>
+        </template>
+        <p class="share">Share</p>
+        <template for:each={socShares} for:item="soc">
+          <i key={soc.id} class={soc.icon}> </i>
+        </template>
+      </div>
+      <div class="markdown">
+        <div class="md" lwc:dom="manual"></div>
+      </div>
+    </div>
+  </div>
+</template>

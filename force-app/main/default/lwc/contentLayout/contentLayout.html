@@ -1,0 +1,11 @@
+<template>
+  <div class="content-container-child">
+    <slot name="banner"></slot>
+    <div class="content-container-child-main">
+      <template lwc:if={title}>
+        <p class="page-title">{title}</p>
+      </template>
+      <slot name="content"></slot>
+    </div>
+  </div>
+</template>

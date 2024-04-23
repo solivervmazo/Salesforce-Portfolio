@@ -1,0 +1,351 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .footnote-sm-pt {
+    @apply sm:pt-[30];
+  }
+}
+
+/* Layouts */
+.a-link {
+  text-decoration: none;
+  @apply text-indigo-600 dark:text-indigo-300;
+}
+.app-layout {
+  @apply pt-0.5;
+}
+.app-layout-inner {
+  @apply flex flex-col min-h-screen;
+}
+.app-layout-header {
+  @apply flex-none;
+}
+.app-nav-sticky {
+  @apply fixed top-0 z-10 bg-gray-50 w-full mx-auto top-0 z-10  bg-primary-light;
+}
+.app-layout-main {
+  @apply flex-grow pt-8;
+}
+.app-layout-footer {
+  @apply flex-none pt-5;
+}
+.content-container {
+  @apply flex-grow mt-10 sm:mt-20 h-full;
+}
+.content-container-child {
+  @apply mx-auto flex-grow;
+}
+.content-container-child-main {
+  @apply container mx-auto;
+}
+.section-layout {
+  @apply container border-t-2 mt-3 border-primary-light flex-col justify-start w-full;
+}
+.section-layout .content {
+  @apply mb-5 w-full;
+}
+.section-layout .actions {
+  @apply mt-3 sm:mt-14 flex justify-center items-center flex-col w-full;
+}
+
+/* Fonts and Typography */
+.font-general-regular {
+  font-family: "GeneralSans-Regular";
+}
+
+.font-general-medium {
+  font-family: "GeneralSans-Medium";
+}
+
+.font-general-semibold {
+  font-family: "GeneralSans-Semibold";
+}
+
+p.page-title {
+  @apply font-general-medium text-2xl sm:text-3xl text-primary-dark mb-8;
+}
+
+p.section-title {
+  @apply font-general-medium text-start text-[2lg] sm:text-[3lg] mt-2 sm:mt-6 text-primary-dark;
+}
+
+/* app button*/
+.app-button {
+  cursor: pointer;
+  @apply inline-flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900  duration-300;
+}
+
+.app-button a {
+  text-decoration: none;
+  @apply font-general-medium text-white text-lg sm:text-xl;
+}
+
+/* Navigation */
+.logo-width {
+  @apply w-36;
+}
+
+.nav-container {
+  @apply z-10 max-w-screen-lg mx-auto sm:flex justify-between sm:items-center my-3;
+}
+
+.nav-container .nav-container-mobile {
+  @apply flex justify-between items-center px-4 sm:px-0;
+}
+
+.nav-container .nav-items-container {
+  @apply block m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none;
+}
+
+.nav-container .nav-items-container .nav-items {
+  @apply block font-general-medium text-left text-lg font-medium text-primary-dark hover:text-indigo-600  sm:mx-4 mb-2 sm:py-2;
+  text-decoration: none;
+}
+
+/* Banner */
+.banner-section {
+  @apply w-full relative;
+}
+
+.banner-section .banner-img-container {
+  @apply max-h-72 h-72 w-full text-right float-right mb-4;
+}
+
+.banner-img-container .banner-img {
+  @apply object-cover max-h-72 w-full text-right float-right;
+}
+
+.banner-section .banner-overlay-container {
+  @apply absolute w-full max-h-72 h-72 flex flex-col justify-between;
+}
+
+.banner-section .banner-overlay-container .content {
+  @apply container flex flex-col mx-auto sm:justify-end sm:flex-row mt-12 sm:mt-10;
+}
+
+.banner-section .banner-overlay-container .content .content-left {
+  @apply w-full md:w-[3/3] text-right;
+}
+
+.banner-section .banner-overlay-container .content .content-left .greeting {
+  @apply font-general-semibold text-3xl md:text-3xl xl:text-4xl text-primary-light uppercase;
+}
+
+.banner-section .banner-overlay-container .content .content-left .job-title {
+  @apply font-general-medium mt-2 text-lg sm:text-xl xl:text-2xl leading-none text-gray-200;
+}
+
+.banner-section .banner-overlay-container .skill-highlight-container {
+  @apply container flex flex-col mx-auto sm:justify-end sm:flex-row mb-8 sm:mb-8;
+}
+
+.banner-section .banner-overlay-container .skill-highlight-container > p {
+  @apply font-general-medium mt-2 text-right py-1 sm:text-lg xl:text-2xl leading-tight text-gray-100 bg-primary-dark px-2;
+}
+
+/* Typewriter effect */
+.banner-section .banner-overlay-container .typewriter span.typer_end {
+  @apply px-1;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.13em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Footer */
+
+.footer-section {
+  @apply container mx-auto;
+}
+
+.footer-section .content-main {
+  @apply pt-20 footnote-sm-pt pb-8 mt-20 border-t-2 border-primary-light;
+}
+
+.footer-section .footer-social-container {
+  @apply flex flex-col justify-center items-center mb-12 sm:mb-20 mx-auto;
+}
+
+.footer-social-container .greeting {
+  @apply font-general-semibold  text-3xl sm:text-4xl text-primary-dark mb-5;
+}
+
+.footer-social-container .social-list {
+  @apply flex gap-4 sm:gap-8;
+}
+
+.footer-social-container .social-list .social-item {
+  @apply text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50  hover:bg-gray-100 shadow-sm p-4 duration-500;
+  text-decoration: none;
+}
+
+.footer-social-container .social-list .social-item .social-item-icon {
+  @apply w-5 sm:w-8 h-5 sm:h-8 flex justify-center items-center;
+}
+.footer-social-container .social-list .social-item i {
+  font-size: 34px;
+}
+
+.footer-section .foot-note-container {
+  @apply flex justify-center items-center text-center;
+}
+
+.footer-section .foot-note {
+  @apply text-ternary-dark;
+}
+
+/* Project/Credentials */
+.credentials.card-grid,
+.projects.card-grid {
+  @apply grid grid-cols-1 sm:grid-cols-4 mt-2 sm:mt-6 gap-2;
+}
+.credential-card,
+.project-card {
+  @apply relative rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light overflow-hidden h-full;
+}
+.credential-card a,
+.project-card a {
+  text-decoration: none;
+}
+.credential-card .img,
+.project-card .img {
+  @apply overflow-hidden max-h-40;
+}
+.credential-card .img > img,
+.project-card .img > img {
+  @apply rounded-t-xl border-none;
+}
+.credential-card .title,
+.project-card .title {
+  @apply text-center px-4 pt-6 pb-4;
+}
+.credential-card .title > p,
+.project-card .title > p {
+  @apply font-general-semibold text-xl text-ternary-dark font-semibold mb-2;
+}
+.credential-card .org,
+.project-card .tags {
+  @apply flex px-4 pt-2 pb-8;
+}
+.credential-card .org > p,
+.project-card .tags > span {
+  @apply font-general-medium pt-0 px-1 text-sm text-center text-ternary-dark;
+}
+.project-card .type {
+  @apply absolute inset-x-0 bottom-0 text-right px-2 pt-2 pb-2;
+}
+.project-card .type > p {
+  @apply font-general-medium pt-0 px-1 text-sm text-ternary-dark;
+}
+.credential-card .featured {
+  @apply absolute left-0 top-0 h-16 w-16;
+}
+.credential-card .featured .banner {
+  @apply bg-gradient-to-r from-green-400 to-blue-500 absolute transform -rotate-45 bg-gray-600 text-center text-white font-semibold py-1 left-[-34px] top-[32px] w-[170px];
+}
+
+/*Project Detail*/
+.project a {
+  text-decoration: none;
+}
+.project .project-header > p.p-title {
+  @apply font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark mb-7;
+}
+.project .project-header .p-sub {
+  @apply flex;
+}
+.project .p-sub .p-type {
+  @apply flex items-center mr-10;
+}
+.project .p-sub .p-date > i,
+.project .p-sub .p-type > i {
+  @apply w-4 h-4 text-ternary-dark;
+}
+.project .p-sub .p-date > span,
+.project .p-sub .p-type > span {
+  @apply font-general-medium ml-2 leading-none text-primary-dark;
+}
+.project .gallery {
+  @apply grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12;
+}
+.project .gallery > img {
+  @apply rounded-xl cursor-pointer shadow-lg sm:shadow-none;
+}
+.project .content {
+  @apply block sm:flex gap-0 sm:gap-10 mt-14;
+}
+.project .content > .info {
+  @apply w-full sm:w-1/4 text-left;
+}
+.project .content > .info .sub {
+  @apply mb-7;
+}
+.project .content > .info .sub > p.heading {
+  @apply font-general-medium text-2xl text-secondary-dark;
+}
+.project .content > .info .sub > ul {
+  @apply leading-loose;
+}
+.project .content > .info .sub p.regular,
+.project .content > .info .sub > ul li {
+  @apply font-general-regular text-ternary-dark;
+}
+.project .content > .info p.share {
+  @apply font-general-medium text-2xl text-ternary-dark mb-2;
+}
+.project .content > .info i.social-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  @apply text-ternary-dark mr-1;
+}
+.markdown {
+  @apply w-full sm:w-3/4 text-left mt-10 text-sm sm:mt-0 bg-slate-100 p-3 rounded-md overflow-auto max-h-screen;
+}
+
+/* About Me */
+.about-me {
+  @apply w-full text-center sm:w-[4/4] text-left;
+}
+.about-me > p {
+  @apply font-general-regular mb-4 text-ternary-dark text-sm;
+}
+/* Contact Me */
+.contact-me > ul {
+  @apply font-general-regular;
+}
+.contact-me > ul li {
+  @apply flex;
+}
+.contact-me > ul li > i {
+  @apply w-5 text-gray-500 mr-4 py-2;
+}
+.contact-me > ul li > span {
+  @apply text-lg mb-4 text-ternary-dark;
+}
