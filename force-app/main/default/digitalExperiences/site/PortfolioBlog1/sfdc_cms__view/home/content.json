@@ -32,14 +32,31 @@
               }, {
                 "children" : [ {
                   "attributes" : {
-                    "title" : ""
+                    "title" : "Projects"
                   },
                   "children" : [ {
+                    "children" : [ {
+                      "attributes" : {
+                        "displayCount" : 4
+                      },
+                      "definition" : "c:projects",
+                      "id" : "83110624-6ee8-480f-b353-72d645c9c9f6",
+                      "type" : "component"
+                    } ],
                     "id" : "805ec17d-8ec3-4601-9aeb-389068830e48",
                     "name" : "content",
                     "title" : "content",
                     "type" : "region"
                   }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "href" : "/projects",
+                        "title" : "View More"
+                      },
+                      "definition" : "c:appButton",
+                      "id" : "b4165382-c029-489e-8d5c-829ea77bff41",
+                      "type" : "component"
+                    } ],
                     "id" : "ef8bce0c-454f-4aaf-a434-c2d42aeeb384",
                     "name" : "actions",
                     "title" : "actions",

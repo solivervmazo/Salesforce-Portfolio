@@ -2,6 +2,6 @@
   "type" : "sfdc_cms__site",
   "title" : "PortfolioBlog",
   "contentBody" : {
-    "authenticationType" : "AUTHENTICATED"
+    "authenticationType" : "AUTHENTICATED_WITH_PUBLIC_ACCESS_ENABLED"
   }
 }

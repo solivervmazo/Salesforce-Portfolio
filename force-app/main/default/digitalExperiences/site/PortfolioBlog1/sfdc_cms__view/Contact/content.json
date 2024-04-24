@@ -29,6 +29,12 @@
                     "title" : ""
                   },
                   "children" : [ {
+                    "children" : [ {
+                      "attributes" : { },
+                      "definition" : "c:contactMe",
+                      "id" : "d83a026a-9476-42ca-aed0-f4566ea2ca86",
+                      "type" : "component"
+                    } ],
                     "id" : "34a8e34a-3388-4f78-9ba3-5bb15b2e716e",
                     "name" : "content",
                     "title" : "content",

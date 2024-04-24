@@ -19,7 +19,7 @@
                 "title" : "Projects"
               },
               "children" : [ {
-                "id" : "216811a0-edfe-4383-bf45-f2ea6b18a77b",
+                "id" : "b7e923d9-7546-4ca1-b0fb-e42dbc55648c",
                 "name" : "banner",
                 "title" : "banner",
                 "type" : "region"
@@ -29,27 +29,35 @@
                     "title" : ""
                   },
                   "children" : [ {
-                    "id" : "66100119-fb61-4f16-8747-fbfc0bb256d3",
+                    "children" : [ {
+                      "attributes" : {
+                        "displayCount" : 0
+                      },
+                      "definition" : "c:projects",
+                      "id" : "e0411ede-7829-4879-b516-171b064cb2a2",
+                      "type" : "component"
+                    } ],
+                    "id" : "8ae9a236-fb84-4505-8e5a-9d95494b2dc0",
                     "name" : "content",
                     "title" : "content",
                     "type" : "region"
                   }, {
-                    "id" : "42d504b0-cd62-478a-b9ad-a78f09bd243e",
+                    "id" : "6be9750d-8610-4fd9-80c2-18b202022b50",
                     "name" : "actions",
                     "title" : "actions",
                     "type" : "region"
                   } ],
                   "definition" : "c:sectionLayout",
-                  "id" : "2978677f-7720-4337-b244-6d548604c507",
+                  "id" : "2eccdd77-cb0f-477b-9941-92f695021cb9",
                   "type" : "component"
                 } ],
-                "id" : "98340b56-855a-4cac-81e1-a7f857fa0feb",
+                "id" : "a7d58cf9-c8ab-4d65-9746-d10bb0cd6d2f",
                 "name" : "content",
                 "title" : "content",
                 "type" : "region"
               } ],
               "definition" : "c:contentLayout",
-              "id" : "279377fc-b236-4626-90b3-4cf8d4b788d0",
+              "id" : "fe419dcf-f64d-4f42-9014-269c160a2b84",
               "type" : "component"
             } ],
             "id" : "92844000-742e-4ff5-95e0-91f0b3b60b77",
