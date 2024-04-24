@@ -1,0 +1,93 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Contact",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"9ffb75f8-0d40-4d69-87be-881c252cbbcf\",\"columns\":[{\"UUID\":\"2100869b-2471-437f-bcab-71542c501b47\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "title" : "Contact Details"
+              },
+              "children" : [ {
+                "id" : "b923a57b-7b87-4c7f-8840-ef80a0d8dc6f",
+                "name" : "banner",
+                "title" : "banner",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "title" : ""
+                  },
+                  "children" : [ {
+                    "id" : "34a8e34a-3388-4f78-9ba3-5bb15b2e716e",
+                    "name" : "content",
+                    "title" : "content",
+                    "type" : "region"
+                  }, {
+                    "id" : "aff8a64b-1bf8-4aa1-b446-4a9364a55db1",
+                    "name" : "actions",
+                    "title" : "actions",
+                    "type" : "region"
+                  } ],
+                  "definition" : "c:sectionLayout",
+                  "id" : "42b50d21-3f47-40bd-bb7f-20b80a4918b5",
+                  "type" : "component"
+                } ],
+                "id" : "b6591f2a-3d6f-420f-b445-0b3cb585722b",
+                "name" : "content",
+                "title" : "content",
+                "type" : "region"
+              } ],
+              "definition" : "c:contentLayout",
+              "id" : "8a3fe180-b928-46ea-9041-95f2d602f970",
+              "type" : "component"
+            } ],
+            "id" : "2100869b-2471-437f-bcab-71542c501b47",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "9ffb75f8-0d40-4d69-87be-881c252cbbcf",
+          "type" : "component"
+        } ],
+        "id" : "510a890d-0ece-4ef5-b3c3-6210558fb9de",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Contact",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "f43d2846-334a-46e9-8334-e7ca766f7d7c",
+          "type" : "component"
+        } ],
+        "id" : "467b4204-5972-4765-8d06-39f948120e3b",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "e1065918-9caa-495d-9d53-235bb3e8744e",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-contact"
+  }
+}

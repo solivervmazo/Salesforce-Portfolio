@@ -5,6 +5,8 @@
 package.xml
 **/appMenus/**
 **/appSwitcher/**
+**/reports/**
+**/dashboards/**
 
 # LWC configuration files
 **/jsconfig.json

@@ -1,0 +1,93 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Projects",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"00bfea26-63a8-45df-b02c-110162cab061\",\"columns\":[{\"UUID\":\"92844000-742e-4ff5-95e0-91f0b3b60b77\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "title" : "Projects"
+              },
+              "children" : [ {
+                "id" : "216811a0-edfe-4383-bf45-f2ea6b18a77b",
+                "name" : "banner",
+                "title" : "banner",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "title" : ""
+                  },
+                  "children" : [ {
+                    "id" : "66100119-fb61-4f16-8747-fbfc0bb256d3",
+                    "name" : "content",
+                    "title" : "content",
+                    "type" : "region"
+                  }, {
+                    "id" : "42d504b0-cd62-478a-b9ad-a78f09bd243e",
+                    "name" : "actions",
+                    "title" : "actions",
+                    "type" : "region"
+                  } ],
+                  "definition" : "c:sectionLayout",
+                  "id" : "2978677f-7720-4337-b244-6d548604c507",
+                  "type" : "component"
+                } ],
+                "id" : "98340b56-855a-4cac-81e1-a7f857fa0feb",
+                "name" : "content",
+                "title" : "content",
+                "type" : "region"
+              } ],
+              "definition" : "c:contentLayout",
+              "id" : "279377fc-b236-4626-90b3-4cf8d4b788d0",
+              "type" : "component"
+            } ],
+            "id" : "92844000-742e-4ff5-95e0-91f0b3b60b77",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "00bfea26-63a8-45df-b02c-110162cab061",
+          "type" : "component"
+        } ],
+        "id" : "78a8a2bc-aba0-4980-9257-e458eb5b5fd8",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Projects",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "240bbbc8-beb2-4587-9683-e79e5113a300",
+          "type" : "component"
+        } ],
+        "id" : "1806233e-c09a-47e3-a04c-a1dfd0204891",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "e0842bb0-740e-47b6-ad85-86cee0fb8db2",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-projects"
+  }
+}
