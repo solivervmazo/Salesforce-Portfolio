@@ -17,8 +17,19 @@
           "children" : [ {
             "children" : [ {
               "attributes" : { },
+              "children" : [ {
+                "id" : "7e71b93a-e976-4a9c-b7b0-820a21389a44",
+                "name" : "menu",
+                "title" : "menu",
+                "type" : "region"
+              }, {
+                "id" : "459ae747-4406-4d8e-b8c4-db8dd5a12608",
+                "name" : "menu-mobile",
+                "title" : "menu-mobile",
+                "type" : "region"
+              } ],
               "definition" : "c:navigationMenu",
-              "id" : "df68b2b4-b296-449a-9cf8-67e6aa7db1cf",
+              "id" : "fb585481-6300-4dcb-9e84-6b0dfbae3e2e",
               "type" : "component"
             } ],
             "id" : "4bd9350b-f7a9-498e-af5b-1946517fd39b",
