@@ -14,7 +14,7 @@
   @apply text-indigo-600 dark:text-indigo-300;
 }
 .app-layout {
-  @apply pt-0.5;
+  @apply pt-0.5 bg-test-color;
 }
 .app-layout-inner {
   @apply flex flex-col min-h-screen;
@@ -347,5 +347,5 @@ p.section-title {
   @apply w-5 text-gray-500 mr-4 py-2;
 }
 .contact-me > ul li > span {
-  @apply text-lg mb-4 text-ternary-dark;
+  @apply text-lg mb-4 text-ternary-dark dark:text-primary-light;
 }
