@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .footnote-sm-pt {
-    @apply sm:pt-[30];
-  }
-}
-
 /* Layouts */
 .a-link {
   text-decoration: none;
@@ -96,12 +90,30 @@ p.section-title {
 }
 
 .nav-container .nav-items-container {
-  @apply block m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none;
+  @apply m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none;
+}
+.nav-container .nav-items-container.open {
+  @apply visible;
+}
+.nav-container .nav-items-container.closed {
+  @apply hidden;
 }
 
 .nav-container .nav-items-container .nav-items {
   @apply block font-general-medium text-left text-lg font-medium text-primary-dark hover:text-indigo-600  sm:mx-4 mb-2 sm:py-2;
   text-decoration: none;
+}
+
+.nav-actions {
+  @apply hidden sm:flex justify-between items-center flex-col md:flex-row;
+}
+
+.nav-mobile-actions {
+  @apply flex flex-row sm:hidden gap-1;
+}
+
+.nav-mobile-actions i {
+  @apply h-7 w-7 fill-current text-secondary-dark;
 }
 
 /* Banner */
@@ -186,7 +198,7 @@ p.section-title {
 }
 
 .footer-section .content-main {
-  @apply pt-20 footnote-sm-pt pb-8 mt-20 border-t-2 border-primary-light;
+  @apply pt-20 sm:pt-[30] pb-8 mt-20 border-t-2 border-primary-light;
 }
 
 .footer-section .footer-social-container {
