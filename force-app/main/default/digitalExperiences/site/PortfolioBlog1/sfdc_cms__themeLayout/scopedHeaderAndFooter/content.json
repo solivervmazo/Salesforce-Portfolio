@@ -18,11 +18,23 @@
             "children" : [ {
               "attributes" : { },
               "children" : [ {
+                "children" : [ {
+                  "attributes" : { },
+                  "definition" : "c:themeSwitcher",
+                  "id" : "6e08b62f-57ac-4ba4-aeb4-49aa2f67b238",
+                  "type" : "component"
+                } ],
                 "id" : "7e71b93a-e976-4a9c-b7b0-820a21389a44",
                 "name" : "menu",
                 "title" : "menu",
                 "type" : "region"
               }, {
+                "children" : [ {
+                  "attributes" : { },
+                  "definition" : "c:themeSwitcher",
+                  "id" : "27dee621-9930-493e-96c4-35c68eaa7167",
+                  "type" : "component"
+                } ],
                 "id" : "459ae747-4406-4d8e-b8c4-db8dd5a12608",
                 "name" : "menu-mobile",
                 "title" : "menu-mobile",
