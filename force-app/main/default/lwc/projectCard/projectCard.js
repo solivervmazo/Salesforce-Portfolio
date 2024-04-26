@@ -18,7 +18,7 @@ export default class ProjectCard extends NavigationMixin(LightningElement) {
     this[NavigationMixin.Navigate]({
       type: "comm__namedPage",
       attributes: {
-        name: "p__c"
+        name: "Project__c"
       },
       state: {
         c__project: this.project?.id

@@ -8,7 +8,7 @@
   @apply text-indigo-600 dark:text-indigo-300;
 }
 .app-layout {
-  @apply pt-0.5 bg-test-color;
+  @apply pt-0.5 bg-secondary-light dark:bg-primary-dark;
 }
 .app-layout-inner {
   @apply flex flex-col min-h-screen;
@@ -17,7 +17,7 @@
   @apply flex-none;
 }
 .app-nav-sticky {
-  @apply fixed top-0 z-10 bg-gray-50 w-full mx-auto top-0 z-10  bg-primary-light;
+  @apply fixed top-0 z-10 bg-gray-50 w-full mx-auto top-0 z-10  bg-primary-light dark:bg-primary-dark;
 }
 .app-layout-main {
   @apply flex-grow pt-8;
@@ -35,7 +35,7 @@
   @apply container mx-auto;
 }
 .section-layout {
-  @apply container border-t-2 mt-3 border-primary-light flex-col justify-start w-full;
+  @apply container border-t-2 mt-3 pt-2 sm:pt-6 border-primary-light dark:border-secondary-dark flex-col justify-start w-full;
 }
 .section-layout .content {
   @apply mb-5 w-full;
@@ -57,12 +57,52 @@
   font-family: "GeneralSans-Semibold";
 }
 
+.page-title,
 p.page-title {
-  @apply font-general-medium text-2xl sm:text-3xl text-primary-dark mb-8;
+  @apply font-general-medium text-2xl sm:text-3xl text-primary-dark dark:text-primary-light mb-8;
+}
+.page-title-l,
+p.page-title-l {
+  @apply font-general-medium text-3xl sm:text-4xl font-bold text-primary-dark mb-7;
 }
 
+.section-title,
 p.section-title {
-  @apply font-general-medium text-start text-[2lg] sm:text-[3lg] mt-2 sm:mt-6 text-primary-dark;
+  @apply font-general-medium text-start text-[2lg] sm:text-[3lg] text-primary-dark dark:text-primary-light;
+}
+
+.card-title,
+p.card-title {
+  @apply font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold;
+}
+
+.body-heading,
+p.body-heading {
+  @apply font-general-medium text-2xl text-secondary-dark dark:text-primary-light;
+}
+
+.body-text,
+p.body-text {
+  @apply font-general-regular text-ternary-dark dark:text-ternary-light;
+}
+
+.body-text1,
+p.body-text1 {
+  @apply text-lg mb-4 text-ternary-dark dark:text-primary-light;
+}
+
+.body-text2,
+p.body-text2 {
+  @apply text-lg mb-4 text-ternary-dark dark:text-primary-light;
+}
+
+.sub-text,
+p.sub-text {
+  @apply font-general-regular text-ternary-dark dark:text-ternary-light text-sm;
+}
+.sub-text1,
+p.sub-text1 {
+  @apply font-general-medium text-sm text-ternary-dark dark:text-ternary-light;
 }
 
 /* app button*/
@@ -100,7 +140,7 @@ p.section-title {
 }
 
 .nav-container .nav-items-container .nav-items {
-  @apply block font-general-medium text-left text-lg font-medium text-primary-dark hover:text-indigo-600  sm:mx-4 mb-2 sm:py-2;
+  @apply block font-general-medium text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-indigo-600 dark:hover:text-indigo-300 sm:mx-4 mb-2 sm:py-2;
   text-decoration: none;
 }
 
@@ -198,7 +238,7 @@ p.section-title {
 }
 
 .footer-section .content-main {
-  @apply pt-20 sm:pt-[30] pb-8 mt-20 border-t-2 border-primary-light;
+  @apply pt-20 sm:pt-[30] pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark;
 }
 
 .footer-section .footer-social-container {
@@ -206,7 +246,7 @@ p.section-title {
 }
 
 .footer-social-container .greeting {
-  @apply font-general-semibold  text-3xl sm:text-4xl text-primary-dark mb-5;
+  @apply font-general-semibold  text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5;
 }
 
 .footer-social-container .social-list {
@@ -214,7 +254,7 @@ p.section-title {
 }
 
 .footer-social-container .social-list .social-item {
-  @apply text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50  hover:bg-gray-100 shadow-sm p-4 duration-500;
+  @apply text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4 duration-500;
   text-decoration: none;
 }
 
@@ -230,7 +270,7 @@ p.section-title {
 }
 
 .footer-section .foot-note {
-  @apply text-ternary-dark;
+  @apply text-ternary-dark dark:text-ternary-light;
 }
 
 /* Project/Credentials */
@@ -240,7 +280,7 @@ p.section-title {
 }
 .credential-card,
 .project-card {
-  @apply relative rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light overflow-hidden h-full;
+  @apply relative rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark overflow-hidden h-full;
 }
 .credential-card a,
 .project-card a {
@@ -260,7 +300,7 @@ p.section-title {
 }
 .credential-card .title > p,
 .project-card .title > p {
-  @apply font-general-semibold text-xl text-ternary-dark font-semibold mb-2;
+  @apply card-title mb-2;
 }
 .credential-card .org,
 .project-card .tags {
@@ -268,13 +308,13 @@ p.section-title {
 }
 .credential-card .org > p,
 .project-card .tags > span {
-  @apply font-general-medium pt-0 px-1 text-sm text-center text-ternary-dark;
+  @apply sub-text1 pt-0 px-1;
 }
 .project-card .type {
   @apply absolute inset-x-0 bottom-0 text-right px-2 pt-2 pb-2;
 }
 .project-card .type > p {
-  @apply font-general-medium pt-0 px-1 text-sm text-ternary-dark;
+  @apply sub-text1 pt-0 px-1;
 }
 .credential-card .featured {
   @apply absolute left-0 top-0 h-16 w-16;
@@ -288,7 +328,7 @@ p.section-title {
   text-decoration: none;
 }
 .project .project-header > p.p-title {
-  @apply font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark mb-7;
+  @apply page-title-l text-left;
 }
 .project .project-header .p-sub {
   @apply flex;
@@ -298,11 +338,11 @@ p.section-title {
 }
 .project .p-sub .p-date > i,
 .project .p-sub .p-type > i {
-  @apply w-4 h-4 text-ternary-dark;
+  @apply w-4 h-4 text-ternary-dark dark:text-ternary-light;
 }
 .project .p-sub .p-date > span,
 .project .p-sub .p-type > span {
-  @apply font-general-medium ml-2 leading-none text-primary-dark;
+  @apply font-general-medium ml-2 leading-none text-primary-dark dark:text-primary-light;
 }
 .project .gallery {
   @apply grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12;
@@ -320,17 +360,17 @@ p.section-title {
   @apply mb-7;
 }
 .project .content > .info .sub > p.heading {
-  @apply font-general-medium text-2xl text-secondary-dark;
+  @apply body-heading;
 }
 .project .content > .info .sub > ul {
   @apply leading-loose;
 }
 .project .content > .info .sub p.regular,
 .project .content > .info .sub > ul li {
-  @apply font-general-regular text-ternary-dark;
+  @apply body-text;
 }
 .project .content > .info p.share {
-  @apply font-general-medium text-2xl text-ternary-dark mb-2;
+  @apply body-heading mb-2;
 }
 .project .content > .info i.social-icon {
   font-size: 2rem;
@@ -346,7 +386,7 @@ p.section-title {
   @apply w-full text-center sm:w-[4/4] text-left;
 }
 .about-me > p {
-  @apply font-general-regular mb-4 text-ternary-dark text-sm;
+  @apply sub-text mb-4;
 }
 /* Contact Me */
 .contact-me > ul {
@@ -359,5 +399,13 @@ p.section-title {
   @apply w-5 text-gray-500 mr-4 py-2;
 }
 .contact-me > ul li > span {
-  @apply text-lg mb-4 text-ternary-dark dark:text-primary-light;
+  @apply body-text1 mb-4;
+}
+
+/* Theme switcher */
+.theme-switcher {
+  @apply ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer;
+}
+.theme-switcher > i {
+  @apply text-primary-dark hover:text-gray-600 dark:hover:text-gray-400 dark:text-ternary-light dark:hover:border-primary-light w-5;
 }
