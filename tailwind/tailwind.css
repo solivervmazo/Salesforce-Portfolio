@@ -59,16 +59,16 @@
 
 .page-title,
 p.page-title {
-  @apply font-general-medium text-2xl sm:text-3xl text-primary-dark dark:text-primary-light mb-8;
+  @apply font-general-medium text-2xl sm:text-3xl text-primary-dark dark:text-primary-light mb-8 px-4 sm:px-0;
 }
 .page-title-l,
 p.page-title-l {
-  @apply font-general-medium text-3xl sm:text-4xl font-bold text-primary-dark mb-7;
+  @apply font-general-medium text-3xl sm:text-4xl font-bold text-primary-dark mb-7 px-4 sm:px-0;
 }
 
 .section-title,
 p.section-title {
-  @apply font-general-medium text-start text-[2lg] sm:text-[3lg] text-primary-dark dark:text-primary-light;
+  @apply font-general-medium text-start text-[2lg] sm:text-[3lg] text-primary-dark dark:text-primary-light px-4 sm:px-0;
 }
 
 .card-title,
@@ -153,7 +153,7 @@ p.sub-text1 {
 }
 
 .nav-mobile-actions i {
-  @apply h-7 w-7 fill-current text-secondary-dark;
+  @apply h-7 w-7 fill-current text-secondary-dark dark:text-secondary-light;
 }
 
 /* Banner */
@@ -280,7 +280,7 @@ p.sub-text1 {
 }
 .credential-card,
 .project-card {
-  @apply relative rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark overflow-hidden h-full;
+  @apply relative sm:rounded-xl rounded-[0] shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark overflow-hidden h-full;
 }
 .credential-card a,
 .project-card a {
@@ -292,7 +292,7 @@ p.sub-text1 {
 }
 .credential-card .img > img,
 .project-card .img > img {
-  @apply rounded-t-xl border-none;
+  @apply rounded-t-[0] sm:rounded-t-[xl] border-none;
 }
 .credential-card .title,
 .project-card .title {
