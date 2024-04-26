@@ -32,7 +32,7 @@
   @apply mx-auto flex-grow;
 }
 .content-container-child-main {
-  @apply container mx-auto;
+  @apply container max-w-screen-lg mx-auto;
 }
 .section-layout {
   @apply container border-t-2 mt-3 border-primary-light flex-col justify-start w-full;
@@ -130,7 +130,7 @@ p.section-title {
 }
 
 .banner-section .banner-overlay-container {
-  @apply absolute w-full max-h-72 h-72 flex flex-col justify-between;
+  @apply absolute  w-full max-w-screen-lg max-h-72 h-72 flex flex-col justify-between;
 }
 
 .banner-section .banner-overlay-container .content {
