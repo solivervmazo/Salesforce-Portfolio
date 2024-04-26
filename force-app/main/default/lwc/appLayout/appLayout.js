@@ -6,12 +6,4 @@ import { LightningElement, api } from "lwc";
  */
 export default class AppLayout extends LightningElement {
   @api color;
-
-  changeColor() {
-    // this.color
-  }
-
-  renderedCallback() {
-    console.log("INIT ", this.color);
-  }
 }

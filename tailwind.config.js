@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: ["selector", '[data-theme="dark"]'],
   purge: {
     mode: "layers",
     layers: ["base", "components", "utilities"],

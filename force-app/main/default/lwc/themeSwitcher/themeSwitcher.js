@@ -6,7 +6,6 @@ const LIGHT = "light";
 export default class ThemeSwitcher extends LightningElement {
   theme;
   icon;
-
   connectedCallback() {
     if (!localStorage.theme) {
       this.theme = window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -19,7 +18,7 @@ export default class ThemeSwitcher extends LightningElement {
   }
 
   setTheme() {
-    this.icon = this.theme === DARK ? "custom:custom10" : "custom:custom3";
+    this.icon = `fa-regular ${this.theme === DARK ? "fa-sun" : "fa-moon"}`;
     document.documentElement.setAttribute("data-theme", this.theme);
     localStorage.setItem("theme", this.theme);
   }

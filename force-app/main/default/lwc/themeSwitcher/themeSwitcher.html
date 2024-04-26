@@ -1,12 +1,11 @@
 <template>
-  <a onclick={toggleTheme}>
-    <lightning-icon
-      size="small"
-      icon-name={icon}
-      alternative-text={theme}
-      title={theme}
-      class="night-switcher slds-var-p-around_small"
-    >
-    </lightning-icon>
-  </a>
+  <!-- sldsValidatorIgnoreNextLine -->
+  <button
+    class="theme-switcher"
+    onclick={toggleTheme}
+    aria-label={theme}
+    title={theme}
+  >
+    <i class={icon}></i>
+  </button>
 </template>
