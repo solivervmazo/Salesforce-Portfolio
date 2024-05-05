@@ -35,7 +35,7 @@
   @apply container max-w-screen-lg mx-auto;
 }
 .section-layout {
-  @apply container border-t-2 mt-3 pt-2 sm:pt-6 border-primary-light dark:border-secondary-dark flex-col justify-start w-full;
+  @apply container border-t-2 mt-3 pt-2 sm:pt-6 border-primary-light dark:border-secondary-dark flex-col justify-start w-full px-0 sm:px-2 lg:px-0;
 }
 .section-layout .content {
   @apply mb-5 w-full;
@@ -59,16 +59,16 @@
 
 .page-title,
 p.page-title {
-  @apply font-general-medium text-2xl sm:text-3xl text-primary-dark dark:text-primary-light mb-8 px-4 sm:px-0;
+  @apply font-general-medium text-2xl sm:text-3xl text-primary-dark dark:text-primary-light mb-8 px-4 sm:px-2 lg:px-0;
 }
 .page-title-l,
 p.page-title-l {
-  @apply font-general-medium text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mb-7 px-4 sm:px-0;
+  @apply font-general-medium text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mb-7 px-4 sm:px-2 lg:px-0;
 }
 
 .section-title,
 p.section-title {
-  @apply font-general-medium text-start text-[2lg] sm:text-[3lg] text-primary-dark dark:text-primary-light px-4 sm:px-0;
+  @apply font-general-medium text-start text-[2lg] sm:text-[3lg] text-primary-dark dark:text-primary-light px-4 sm:px-2 lg:px-0;
 }
 
 .card-title,
@@ -131,7 +131,7 @@ p.sub-text1 {
 }
 
 .nav-container .nav-container-mobile {
-  @apply flex justify-between items-center px-4 sm:px-0;
+  @apply flex justify-between items-center px-4 sm:px-2 lg:px-0;
 }
 
 .nav-container .nav-items-container {
@@ -150,7 +150,7 @@ p.sub-text1 {
 }
 
 .nav-actions {
-  @apply hidden sm:flex justify-between items-center flex-col md:flex-row;
+  @apply hidden sm:flex justify-between items-center flex-col md:flex-row md:px-2 lg:px-0;
 }
 
 .nav-mobile-actions {
@@ -183,7 +183,7 @@ p.sub-text1 {
 }
 
 .banner-section .banner-overlay-container .content .content-left {
-  @apply w-full md:w-[3/3] text-right;
+  @apply w-full md:w-[3/3] text-right px-2 sm:md:px-2 lg:px-0;
 }
 
 .banner-section .banner-overlay-container .content .content-left .greeting {
@@ -195,7 +195,7 @@ p.sub-text1 {
 }
 
 .banner-section .banner-overlay-container .skill-highlight-container {
-  @apply container max-w-screen-lg flex flex-col mx-auto sm:justify-end sm:flex-row mb-8 sm:mb-8;
+  @apply container max-w-screen-lg flex flex-col mx-auto sm:justify-end sm:flex-row mb-8 sm:mb-8 px-0 md:max-md:px-2;
 }
 
 .banner-section .banner-overlay-container .skill-highlight-container > p {
@@ -336,7 +336,7 @@ p.sub-text1 {
   @apply page-title-l text-left;
 }
 .project .project-header .p-sub {
-  @apply flex px-4 sm:px-0;
+  @apply flex px-4 sm:px-2 lg:px-0;
 }
 .project .p-sub .p-type {
   @apply flex items-center mr-10;
@@ -359,7 +359,7 @@ p.sub-text1 {
   @apply block sm:flex gap-0 sm:gap-10 mt-14;
 }
 .project .content > .info {
-  @apply w-full sm:w-1/4 text-left px-4 sm:px-0;
+  @apply w-full sm:w-1/4 text-left px-4 sm:px-2 lg:px-0;
 }
 .project .content > .info .sub {
   @apply mb-7;
