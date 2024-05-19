@@ -1,18 +1,18 @@
-# Salesforce DX Project: Next Steps
+![Static Badge](https://img.shields.io/badge/Status-Ongoing-green)
+![Static Badge](https://img.shields.io/badge/Salesforce-Experience_Cloud-blue?logo=salesforce)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+# Part 1: Creating Portfolio Site in Salesforce Experience Cloud
 
-## How Do You Plan to Deploy Your Changes?
+In this project series, we will use my [Portfolio](https://solivervmazo.github.io/solivermazo/). as inspiration for design. We'll utilize Tailwind CSS, Lightning Web Components (LWC), Visual Studio Code (VSCode) to replicate the design aesthetics as much as possible.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+All resources and latest output for this series is in `integration` branch.
 
-## Configure Your Salesforce DX Project
+### All parts of the series.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- [Creating Portfolio Site in Salesforce Experience Cloud](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-soliver-mazo-8hdrc)
 
-## Read All About It
+## Part 1: Creating Portfolio Site in Salesforce Experience Cloud
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Follow this [Blog Post](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-soliver-mazo-8hdrc) to start with the series.
+
+All resources and final output for this part is in `static-v1` branch.
