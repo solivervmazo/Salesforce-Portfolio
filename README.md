@@ -35,3 +35,4 @@ All resources and final output for this part is in `theme-swticher-v1` branch.\
 ## Part 3: Creating Portfolio Site in Salesforce Experience Cloud: Security Basics
 
 No changes comitted, this part [Creating Portfolio Site in Salesforce Experience Cloud: Security Basics](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-security-mazo-fpvec) only discusses the security basics for this series.
+
