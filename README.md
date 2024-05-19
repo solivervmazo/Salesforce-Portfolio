@@ -1,18 +1,37 @@
-# Salesforce DX Project: Next Steps
+![Static Badge](https://img.shields.io/badge/Status-Ongoing-green)
+![Static Badge](https://img.shields.io/badge/Salesforce-Experience_Cloud-blue?logo=salesforce)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+# Part 1: Creating Portfolio Site in Salesforce Experience Cloud
 
-## How Do You Plan to Deploy Your Changes?
+In this project series, we will use my [Portfolio](https://solivervmazo.github.io/solivermazo/). as inspiration for design. We'll utilize Tailwind CSS, Lightning Web Components (LWC), Visual Studio Code (VSCode) to replicate the design aesthetics as much as possible.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+All resources and latest output for this series is in `integration` branch.
 
-## Configure Your Salesforce DX Project
+### All parts of the series.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- [Creating Portfolio Site in Salesforce Experience Cloud](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-soliver-mazo-8hdrc)
+- [Creating Portfolio Site in Salesforce Experience Cloud: Dark Mode](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-dark-soliver-mazo-kl3jc)
+- [Creating Portfolio Site in Salesforce Experience Cloud: Security Basics](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-security-mazo-fpvec)
 
-## Read All About It
+## Part 1: Creating Portfolio Site in Salesforce Experience Cloud
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Follow this [Blog Post](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-soliver-mazo-8hdrc) to start with the series.
+
+All resources and final output for this part is in `static-v1` branch.
+
+## Part 2: Creating Portfolio Site in Salesforce Experience Cloud: Dark Mode
+
+To begin this part of the series [Creating Portfolio Site in Salesforce Experience Cloud: Dark Mode](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-dark-soliver-mazo-kl3jc) , clone `static-v1` branch `git clone -b static-v1 https://github.com/solivervmazo/Salesforce-Portfolio.git`, make sure that you're cloning the static-v1 branch to follow along with this part of the series. Alternatively, you can read the first part of this series and start from there.
+
+All resources and final output for this part is in `theme-swticher-v1` branch.\
+**Note**: Instead of `switcher*` , I made a type and named the branch with `swticher`.
+
+### Change Logs
+
+- Added `<slot name="menu"></slot>` in NavigationMenu component.
+- Enhance styling to accomodate mobile and few adjustments
+- Added styling for the next part of the series
+
+## Part 3: Creating Portfolio Site in Salesforce Experience Cloud: Security Basics
+
+No changes comitted, this part [Creating Portfolio Site in Salesforce Experience Cloud: Security Basics](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-security-mazo-fpvec) only discusses the security basics for this series.
