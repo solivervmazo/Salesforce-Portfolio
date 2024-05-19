@@ -1,0 +1,35 @@
+<template>
+  <c-app-base-input
+    title={title}
+    tag={tag}
+    hint={hint}
+    error={computedError}
+    required={required}
+  >
+    <span slot="title">
+      <div class="form-input-wrapper">
+        <label for="website" class="title">
+          <i lwc:if={computedUrl.icon} class={computedUrl.icon}></i>
+          {computedUrl.name}
+        </label>
+      </div>
+    </span>
+    <div class="form-input-wrapper-actual wrapper">
+      <input
+        id="website"
+        name="website"
+        value={computedUrl.url}
+        data-error={computedIsError}
+        onchange={handleChange}
+        onblur={handleBlur}
+      />
+      <div class="wrapper actions">
+        <button type="button" class="cancel"><label>Cancel</label></button>
+        <button type="button" class="submit"><label>Save</label></button>
+        <button lwc:if={computedUrl.id} type="button" class="delete">
+          <label>Delete</label>
+        </button>
+      </div>
+    </div>
+  </c-app-base-input>
+</template>

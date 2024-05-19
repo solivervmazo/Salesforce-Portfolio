@@ -1,0 +1,54 @@
+<template>
+  <div class="section-form profile-form">
+    <form>
+      <div class="body-wrapper">
+        <div class="inner">
+          <div class="wrapper">
+            <c-app-form-input
+              input="textarea"
+              class="input-wrapper input-span-full"
+              tag="about"
+              title="About"
+              hint="Write a few sentences about yourself."
+              required
+            ></c-app-form-input>
+            <c-app-form-input
+              class="input-wrapper input-span-double"
+              tag="job-title"
+              title="Job title"
+              required
+            ></c-app-form-input>
+            <c-app-form-input
+              class="input-wrapper input-span-thirds"
+              tag="skills"
+              title="Skills"
+              hint="Separated by comma, first 3 skills will be featured in banner."
+              required
+            ></c-app-form-input>
+            <c-app-form-input
+              input="avatar"
+              class="input-wrapper input-span-full"
+              tag="photo-avatar"
+              title="Photo"
+              hint="PNG, JPG, GIF up to 10MB."
+            ></c-app-form-input>
+            <c-app-form-input
+              input="file"
+              class="input-wrapper input-span-full"
+              tag="file-upload"
+              title="Cover photo"
+              hint="PNG, JPG, GIF up to 10MB."
+            ></c-app-form-input>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions-wrapper divider-bottom">
+        <!-- sldsValidatorIgnoreNextLine -->
+        <button type="button" class="cancel">Cancel</button>
+        <!-- sldsValidatorIgnoreNextLine -->
+        <button type="button" class="submit">Save</button>
+      </div>
+    </form>
+  </div>
+</template>

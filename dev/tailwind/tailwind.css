@@ -1,0 +1,697 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:host {
+  --primary-light-color: #f7f8fc;
+  --secondary-light-color: #ffffff;
+  --ternary-light-color: #f6f7f8;
+  --primary-dark-color: #0d2438;
+  --secondary-dark-color: #102d44;
+  --ternary-dark-color: #1e3850;
+}
+
+:host {
+  --dxp-s-form-element-label-color: var(--primary-dark-color);
+  --lwc-colorTextLink: var(--primary-dark-color);
+  --dxp-s-link-text-color: var(--primary-dark-color);
+  --sds-c-input-radius-border: 0.375rem;
+  --slds-c-card-radius-border: 0.75rem;
+}
+
+:host a:hover {
+  --dxp-c-link-text-color-hover: var(--primary-dark-color);
+}
+
+:host:where([data-theme="dark"], [data-theme="dark"] *) {
+  --dxp-s-form-element-label-color: var(--primary-light-color);
+  --lwc-colorTextLink: var(--primary-light-color);
+  --dxp-s-link-text-color: var(--primary-light-color);
+  --dxp-c-link-text-color-hover: var(--primary-light-color);
+}
+
+/* Layouts */
+.a-link {
+  text-decoration: none;
+  @apply text-indigo-600 dark:text-indigo-300;
+}
+
+.general-padding {
+  @apply px-4 sm:px-2 lg:px-0;
+}
+
+.non-a-but-link {
+  @apply text-primary-dark hover:text-gray-600 dark:hover:text-gray-400 dark:text-ternary-light dark:hover:border-primary-light;
+}
+
+.app-background {
+  @apply bg-secondary-light dark:bg-primary-dark;
+}
+
+.app-layout {
+  @apply pt-0.5 app-background;
+}
+.app-layout-inner {
+  @apply flex flex-col min-h-screen;
+}
+.app-layout-header {
+  @apply flex-none;
+}
+.app-nav-sticky {
+  @apply fixed w-full mx-auto top-0 z-10  bg-primary-light dark:bg-primary-dark;
+}
+.app-layout-main {
+  @apply flex-grow pt-8;
+}
+.app-layout-footer {
+  @apply flex-none pt-5;
+}
+.content-container {
+  @apply flex-grow mt-10 sm:mt-20 h-full;
+}
+.content-container-child {
+  @apply mx-auto flex-grow;
+}
+.content-container-child-main {
+  @apply container max-w-screen-lg mx-auto;
+}
+.section-layout {
+  @apply container border-t mt-3 pt-2 sm:pt-6 border-gray-900/10 dark:border-secondary-dark flex-col justify-start w-full px-0 sm:px-2 lg:px-0;
+}
+.section-layout .content {
+  @apply mb-5 w-full;
+}
+.section-layout .actions {
+  @apply mt-3 sm:mt-14 flex justify-center items-center flex-col w-full;
+}
+
+/* Editable section layout */
+.editable-section-layout {
+  @apply container flex flex-col justify-start w-full px-0;
+}
+.editable-section-layout .title {
+  @apply flex flex-row justify-start gap-1 items-center py-2 general-padding;
+}
+.editable-section-layout .content {
+  @apply w-full gap-2;
+}
+.editable-section-layout .actions {
+  @apply flex justify-center items-center flex-row w-full;
+}
+
+/* Fonts and Typography */
+.font-general-regular {
+  font-family: "GeneralSans-Regular";
+}
+
+.font-general-medium {
+  font-family: "GeneralSans-Medium";
+}
+
+.font-general-semibold {
+  font-family: "GeneralSans-Semibold";
+}
+
+.page-title,
+p.page-title {
+  @apply font-general-medium text-2xl sm:text-3xl text-primary-dark dark:text-primary-light mb-8 general-padding;
+}
+.page-title-l,
+p.page-title-l {
+  @apply font-general-medium text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mb-7 general-padding;
+}
+
+.section-title,
+p.section-title {
+  @apply font-general-medium text-start text-[2lg] sm:text-[3lg] text-primary-dark dark:text-primary-light general-padding;
+}
+
+.card-title,
+p.card-title {
+  @apply font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold;
+}
+
+.body-heading,
+p.body-heading {
+  @apply font-general-medium text-2xl text-secondary-dark dark:text-primary-light;
+}
+
+.body-heading3,
+p.body-heading3 {
+  @apply font-general-medium text-secondary-dark dark:text-primary-light;
+}
+
+.body-text,
+p.body-text {
+  @apply font-general-regular text-ternary-dark dark:text-ternary-light;
+}
+
+.body-text1,
+p.body-text1 {
+  @apply text-lg mb-4 text-ternary-dark dark:text-primary-light;
+}
+
+.body-text2,
+p.body-text2 {
+  @apply text-lg mb-4 text-ternary-dark dark:text-primary-light;
+}
+
+.sub-text,
+p.sub-text {
+  @apply font-general-regular text-ternary-dark dark:text-ternary-light text-sm;
+}
+.sub-text1,
+p.sub-text1 {
+  @apply font-general-medium text-sm text-ternary-dark dark:text-ternary-light;
+}
+
+/* app button*/
+.app-button {
+  cursor: pointer;
+  @apply inline-flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900  duration-300;
+}
+.app-button a {
+  text-decoration: none;
+  @apply font-general-medium text-white text-lg sm:text-xl;
+}
+
+/* App Icon Button */
+.app-icon-btn {
+  @apply non-a-but-link flex flex-row justify-between gap-2 cursor-pointer;
+}
+.app-icon-btn .p-type {
+  @apply flex items-center;
+}
+.app-icon-btn > i {
+  @apply w-4;
+}
+.app-icon-btn > span {
+  @apply font-general-medium leading-none;
+}
+.app-icon-btn:is(.app-icon-btn.small) > span {
+  font-size: 0.9rem;
+}
+.app-icon-btn:is(.app-icon-btn.small) > i {
+  font-size: 0.9rem;
+}
+
+/* Navigation */
+.logo-width {
+  @apply w-36;
+}
+.nav-container {
+  @apply z-10 max-w-screen-lg mx-auto sm:flex justify-between sm:items-center my-3;
+}
+.nav-container .nav-container-mobile {
+  @apply flex justify-between items-center general-padding;
+}
+.nav-container .nav-items-container {
+  @apply m-0 mt-5 sm:mt-0 sm:flex p-5 pb-0 sm:p-0 justify-center items-center shadow-lg sm:shadow-none;
+}
+.nav-container .nav-items-container.open {
+  @apply visible;
+}
+.nav-container .nav-items-container.closed {
+  @apply hidden;
+}
+.nav-container .nav-items-container .nav-items {
+  @apply block font-general-medium text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-indigo-600 dark:hover:text-indigo-300 sm:mx-4 mb-2 sm:mb-0;
+  text-decoration: none;
+}
+.nav-container .nav-items-container .menu-footer {
+  @apply border-t-2 border-secondary-light dark:border-secondary-dark;
+}
+.nav-items-container .user-menu {
+  @apply py-2 flex sm:hidden flex-row justify-between items-center;
+}
+.nav-actions .user-or-login,
+.nav-items-container .user-menu .user-or-login {
+  @apply font-general-medium text-start text-[2lg] sm:text-[3lg] text-primary-dark dark:text-primary-light;
+  text-decoration: none;
+}
+.nav-items-container .user-menu .avatar > i {
+  @apply bg-secondary-light dark:bg-ternary-dark p-3 shadow-sm rounded-full text-primary-dark hover:text-gray-600 dark:hover:text-gray-400 dark:text-ternary-light dark:hover:border-primary-light;
+}
+.nav-actions {
+  @apply hidden sm:flex justify-end items-center flex-col gap-1 md:flex-row md:px-2 lg:px-0;
+}
+.nav-mobile-actions {
+  @apply flex flex-row sm:hidden gap-1;
+}
+.nav-mobile-actions i {
+  @apply h-7 w-7 fill-current text-secondary-dark dark:text-secondary-light;
+}
+
+/* Banner */
+.banner-section {
+  @apply w-full relative;
+}
+
+.banner-section .banner-img-container {
+  @apply max-h-72 h-72 w-full text-right float-right mb-4;
+}
+.banner-img-container .banner-img {
+  @apply object-cover max-h-72 w-full text-right float-right;
+}
+.banner-section .banner-overlay-container {
+  @apply absolute  w-full max-w-screen-lg max-h-72 h-72 flex flex-col justify-between;
+}
+.banner-section .banner-overlay-container .content {
+  @apply container max-w-screen-lg flex flex-col mx-auto sm:justify-end sm:flex-row mt-12 sm:mt-10;
+}
+.banner-section .banner-overlay-container .content .content-left {
+  @apply w-full md:w-[3/3] text-right px-2 sm:md:px-2 lg:px-0;
+}
+.banner-section .banner-overlay-container .content .content-left .greeting {
+  @apply font-general-semibold text-3xl md:text-3xl xl:text-4xl text-primary-light uppercase;
+}
+.banner-section .banner-overlay-container .content .content-left .job-title {
+  @apply font-general-medium mt-2 text-lg sm:text-xl xl:text-2xl leading-none text-gray-200;
+}
+.banner-section .banner-overlay-container .skill-highlight-container {
+  @apply container max-w-screen-lg flex flex-col mx-auto sm:justify-end sm:flex-row mb-8 sm:mb-8 px-0 md:max-md:px-2;
+}
+
+.banner-section .banner-overlay-container .skill-highlight-container > p {
+  @apply font-general-medium mt-2 text-right py-1 sm:text-lg xl:text-2xl leading-tight text-gray-100 bg-primary-dark px-2;
+}
+
+/* Typewriter effect */
+.banner-section .banner-overlay-container .typewriter span.typer_end {
+  @apply px-1;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.13em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Footer */
+
+.footer-section {
+  @apply container mx-auto;
+}
+
+.footer-section .content-main {
+  @apply pt-20 sm:pt-[30] pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark;
+}
+
+.footer-section .footer-social-container {
+  @apply flex flex-col justify-center items-center mb-12 sm:mb-20 mx-auto;
+}
+
+.footer-social-container .greeting {
+  @apply font-general-semibold  text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5;
+}
+
+.footer-social-container .social-list {
+  @apply flex gap-4 sm:gap-8;
+}
+
+.footer-social-container .social-list .social-item {
+  @apply text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4 duration-500;
+  text-decoration: none;
+}
+
+.footer-social-container .social-list .social-item .social-item-icon {
+  @apply w-5 sm:w-8 h-5 sm:h-8 flex justify-center items-center;
+}
+.footer-social-container .social-list .social-item i {
+  font-size: 34px;
+}
+
+.footer-section .foot-note-container {
+  @apply flex justify-center items-center text-center;
+}
+
+.footer-section .foot-note {
+  @apply text-ternary-dark dark:text-ternary-light;
+}
+
+/* Project/Credentials */
+.credentials.card-grid,
+.projects.card-grid {
+  @apply grid grid-cols-1 sm:grid-cols-4 mt-2 sm:mt-6 gap-2;
+}
+.credential-card,
+.project-card {
+  @apply flex justify-between flex-col relative sm:rounded-xl rounded-[0] shadow-lg hover:shadow-xl mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark overflow-hidden h-full;
+}
+.credential-card a,
+.project-card a {
+  text-decoration: none;
+}
+.credential-card .img,
+.project-card .img {
+  @apply overflow-hidden max-h-40 cursor-pointer;
+}
+.credential-card .img > img,
+.project-card .img > img {
+  @apply rounded-t-[0] sm:rounded-t-[xl] border-none;
+}
+.credential-card .title,
+.project-card .title {
+  @apply text-center px-4 pt-6 pb-4;
+}
+.credential-card .title > p,
+.project-card .title > p {
+  @apply card-title mb-2;
+}
+.credential-card .org,
+.project-card .tags {
+  @apply flex px-4 pt-2 pb-8;
+}
+.credential-card .org > p,
+.project-card .tags > span {
+  @apply sub-text1 pt-0 px-1;
+}
+.project-card .type {
+  @apply absolute inset-x-0 bottom-0 text-right px-2 pt-2 pb-2;
+}
+.project-card .type > p {
+  @apply sub-text1 pt-0 px-1;
+}
+.credential-card .featured {
+  @apply absolute left-0 top-0 h-16 w-16;
+}
+.credential-card .featured .banner {
+  @apply bg-gradient-to-r from-green-400 to-blue-500 absolute transform -rotate-45 bg-gray-600 text-center text-white font-semibold py-1 left-[-34px] top-[32px] w-[170px];
+}
+.credential-card .card-controller-wrapper {
+  @apply py-0 px-2;
+}
+.section-form.credential-form {
+  @apply px-4 sm:px-5 pt-4;
+}
+
+/*Project Detail*/
+.project a {
+  text-decoration: none;
+}
+.project .project-header > p.p-title {
+  @apply page-title-l text-left;
+}
+.project .project-header .p-sub {
+  @apply flex general-padding;
+}
+.project .p-sub .p-type {
+  @apply flex items-center mr-10;
+}
+.project .p-sub .p-date > i,
+.project .p-sub .p-type > i {
+  @apply w-4 h-4  text-ternary-dark dark:text-ternary-light;
+}
+.project .p-sub .p-date > span,
+.project .p-sub .p-type > span {
+  @apply body-heading3 ml-2 leading-none;
+}
+.project .gallery {
+  @apply grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-10 mt-12;
+}
+.project .gallery > img {
+  @apply rounded-[0] sm:rounded-xl cursor-pointer shadow-lg sm:shadow-none;
+}
+.project .content {
+  @apply block sm:flex gap-0 sm:gap-10 mt-14;
+}
+.project .content > .info {
+  @apply w-full sm:w-1/4 text-left general-padding;
+}
+.project .content > .info .sub {
+  @apply mb-7;
+}
+.project .content > .info .sub > p.heading {
+  @apply body-heading;
+}
+.project .content > .info .sub > ul {
+  @apply leading-loose;
+}
+.project .content > .info .sub p.regular,
+.project .content > .info .sub > ul li {
+  @apply body-text;
+}
+.project .content > .info p.share {
+  @apply body-heading mb-2;
+}
+.project .content > .info i.social-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  @apply text-ternary-dark mr-1;
+}
+.markdown {
+  @apply w-full sm:w-3/4 text-left mt-10 text-sm sm:mt-0 bg-slate-100 p-3 rounded-[0] sm:rounded-md overflow-auto max-h-screen;
+}
+
+/* About Me */
+.about-me {
+  @apply w-full text-center sm:w-[4/4] text-left;
+}
+.about-me > p {
+  @apply sub-text mb-4;
+}
+.profile-settings {
+  @apply flex flex-col gap-3 w-full pb-4;
+}
+
+/* Contact Me */
+.contact-me > ul {
+  @apply font-general-regular;
+}
+.contact-me > ul li {
+  @apply flex;
+}
+.contact-me > ul li > i {
+  @apply w-5 text-gray-500 mr-4 py-2;
+}
+.contact-me > ul li > span {
+  @apply body-text1 mb-4;
+}
+
+/* Theme switcher */
+.theme-switcher {
+  @apply bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer;
+}
+.theme-switcher > i {
+  @apply text-primary-dark hover:text-gray-600 dark:hover:text-gray-400 dark:text-ternary-light dark:hover:border-primary-light w-5;
+}
+
+/* Forms */
+.section-form {
+  @apply general-padding mb-6;
+}
+.section-form > form > .body-wrapper {
+  @apply space-y-12;
+}
+.section-form:not(.section-form.website-form) > form > .body-wrapper > .inner {
+  @apply pb-6;
+}
+.section-form > form > .body-wrapper > .inner > .wrapper {
+  @apply mt-6 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6;
+}
+.form-input-wrapper.input-span-full,
+.section-form > form > .body-wrapper .input-wrapper.input-span-full {
+  @apply col-span-full;
+}
+.form-input-wrapper.input-span-thirds,
+.section-form > form > .body-wrapper .input-wrapper.input-span-thirds {
+  @apply sm:col-span-4;
+}
+.form-input-wrapper.input-span-double,
+.section-form > form > .body-wrapper .input-wrapper.input-span-double {
+  @apply sm:col-span-3;
+}
+.form-input-wrapper.input-span-tripple,
+.section-form > form > .body-wrapper .input-wrapper.input-span-tripple {
+  @apply sm:col-span-2;
+}
+.form-input-wrapper.input-span-full.col-start,
+.section-form > form > .body-wrapper .input-wrapper.input-span-full.col-start {
+  @apply col-start-1;
+}
+.form-input-wrapper.input-span-thirds.col-start,
+.section-form
+  > form
+  > .body-wrapper
+  .input-wrapper.input-span-thirds.col-start {
+  @apply col-start-1;
+}
+.form-input-wrapper.input-span-double.col-start,
+.section-form
+  > form
+  > .body-wrapper
+  .input-wrapper.input-span-double.col-start {
+  @apply col-start-1;
+}
+.form-input-wrapper.input-span-tripple.col-start,
+.section-form
+  > form
+  > .body-wrapper
+  .input-wrapper.input-span-tripple.col-start {
+  @apply col-start-1;
+}
+.input-wrapper label.title,
+.form-input-wrapper label.title,
+.form-input-wrapper label.description,
+.form-input-wrapper-actual label.description {
+  @apply block text-sm text-start leading-6 text-gray-900 dark:text-primary-light;
+}
+.form-input-wrapper label.title,
+.input-wrapper label.title {
+  @apply font-medium;
+}
+.form-input-wrapper label.title span.required,
+.section-form > form .input-wrapper label.title span.required {
+  @apply text-red-500 pr-1;
+}
+
+.form-input-wrapper label.title i,
+.input-wrapper label.title i {
+  @apply mr-2;
+}
+.form-input-wrapper p.hint,
+.section-form > form .input-wrapper p.hint {
+  @apply mt-3 text-sm leading-6 text-start text-gray-600 dark:text-gray-300;
+}
+.form-input-wrapper p.hint span.error,
+.section-form > form .input-wrapper p.hint span.error {
+  @apply text-red-600 dark:text-red-400;
+}
+
+.form-input-wrapper p.error,
+.section-form > form .input-wrapper p.error {
+  @apply text-red-500;
+}
+.form-input-wrapper-actual.wrapper {
+  @apply mt-2 flex gap-3;
+}
+.section-form.website-form > form .input-wrapper div.wrapper.actions {
+  @apply flex gap-3;
+}
+.form-input-wrapper-actual div.wrapper.actions {
+  @apply flex gap-3 justify-end;
+}
+
+select:where([data-error="error"]),
+textarea:where([data-error="error"]),
+input:where([data-error="error"])
+  .form-input-wrapper-actual
+  select:where([data-error="error"]),
+.form-input-wrapper-actual textarea:where([data-error="error"]),
+.form-input-wrapper-actual input:where([data-error="error"]) {
+  @apply ring-red-600 dark:ring-red-400 focus:ring-red-600 dark:focus:ring-red-400;
+}
+select:where([data-error="clean"]),
+textarea:where([data-error="clean"]),
+input:where([data-error="clean"])
+  .form-input-wrapper-actual
+  select:where([data-error="clean"]),
+.form-input-wrapper-actual textarea:where([data-error="clean"]),
+.form-input-wrapper-actual input:where([data-error="clean"]) {
+  @apply ring-gray-300 focus:ring-indigo-600;
+}
+input,
+select,
+textarea,
+.form-input-wrapper-actual select,
+.form-input-wrapper-actual textarea,
+.form-input-wrapper-actual input {
+  @apply text-gray-900 shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset;
+}
+input:not([type="checkbox"]),
+select,
+textarea,
+.form-input-wrapper-actual select,
+.form-input-wrapper-actual textarea,
+.form-input-wrapper-actual input:not([type="checkbox"]) {
+  @apply block w-full rounded-md border-0 px-1.5 py-1.5 text-gray-900 sm:text-sm sm:leading-6;
+}
+.form-input-wrapper-actual input[type="checkbox"] {
+  @apply h-4 w-4 rounded text-indigo-600;
+}
+.form-input-wrapper-actual input[type="checkbox"]:where([data-error="error"]) {
+  @apply ring-red-600 focus:ring-red-400;
+}
+
+.form-input-wrapper-actual.wrapper.avatar-special-wrapper {
+  @apply items-center gap-x-3;
+}
+.form-input-wrapper-actual.wrapper.upload-special-wrapper {
+  @apply justify-center rounded-lg border border-dashed border-gray-900/25 dark:border-gray-400/25 px-6 py-10;
+}
+.form-input-wrapper-actual.wrapper.upload-special-wrapper:where(
+    [data-error="error"]
+  ) {
+  @apply border-red-600 dark:border-red-400;
+}
+.form-input-wrapper-actual.wrapper.upload-special-wrapper .upload-button {
+  @apply relative non-a-but-link p-1.5 cursor-pointer rounded-md bg-ternary-light dark:bg-ternary-dark font-semibold focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2;
+}
+.form-input-wrapper-actual.wrapper.upload-special-wrapper .file-input-wrapper {
+  @apply flex flex-row px-2;
+}
+.form-input-wrapper-actual.wrapper.upload-special-wrapper > div {
+  @apply flex items-center;
+}
+.form-input-wrapper-actual.wrapper.checkbox-special-wrapper {
+  @apply flex pt-2 gap-x-3;
+}
+.form-input-wrapper-actual.wrapper.checkbox-special-wrapper > div {
+  @apply flex h-6 items-center;
+}
+.form-input-wrapper-actual.wrapper.avatar-special-wrapper > button {
+  @apply rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50;
+}
+.form-input-wrapper-actual p.body-hint {
+  @apply text-sm leading-6 text-gray-600 dark:text-gray-300;
+}
+.section-form > form > .actions-wrapper.divider-bottom {
+  @apply border-b border-gray-900/10 dark:border-ternary-dark;
+}
+.section-form > form > .actions-wrapper {
+  @apply py-3 flex items-center justify-end gap-x-6;
+}
+.form-input-wrapper-actual .wrapper.actions label,
+.section-form > form label {
+  @apply cursor-pointer;
+}
+.form-input-wrapper-actual .wrapper.actions button.submit,
+.section-form > form button.submit {
+  @apply rounded-md px-3 py-2 text-sm font-semibold text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+}
+.form-input-wrapper-actual .wrapper.actions button.cancel,
+.section-form > form button.cancel {
+  @apply text-sm non-a-but-link font-semibold leading-6 text-gray-900 dark:text-primary-light;
+}
+.form-input-wrapper-actual .wrapper.actions button.delete,
+.section-form > form button.delete {
+  @apply rounded-md px-3 py-2 text-sm font-semibold text-white bg-red-500 hover:bg-red-600 focus:ring-1 focus:ring-red-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600;
+}
+
+/* User Controls */
+.control-header {
+  @apply w-full py-2 flex flex-row justify-between mb-3 general-padding;
+}

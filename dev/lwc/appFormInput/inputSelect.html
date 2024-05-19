@@ -1,0 +1,27 @@
+<template>
+  <c-app-base-input
+    title={title}
+    tag={tag}
+    hint={hint}
+    error={computedError}
+    required={required}
+  >
+    <div class="form-input-wrapper-actual wrapper">
+      <!-- sldsValidatorIgnoreNextLine -->
+      <select
+        id={tag}
+        name={tag}
+        autocomplete="country-name"
+        data-error={computedIsError}
+        disabled={disabled}
+        onchange={handleChange}
+        onblur={handleBlur}
+      >
+        <option></option>
+        <option>United States</option>
+        <option>Canada</option>
+        <option>Mexico</option>
+      </select>
+    </div>
+  </c-app-base-input>
+</template>
