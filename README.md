@@ -1,3 +1,4 @@
+![Static Badge](https://img.shields.io/badge/Branch-Pre-purple?logo=github)
 ![Static Badge](https://img.shields.io/badge/Status-Ongoing-green)
 ![Static Badge](https://img.shields.io/badge/Salesforce-Experience_Cloud-blue?logo=salesforce)
 
@@ -12,6 +13,7 @@ All resources and latest output for this series is in `integration` branch.
 - [Creating Portfolio Site in Salesforce Experience Cloud](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-soliver-mazo-8hdrc)
 - [Creating Portfolio Site in Salesforce Experience Cloud: Dark Mode](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-dark-soliver-mazo-kl3jc)
 - [Creating Portfolio Site in Salesforce Experience Cloud: Security Basics](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-security-mazo-fpvec)
+- Creating Portfolio Site in Salesforce Experience Cloud: Components
 
 ## Part 1: Creating Portfolio Site in Salesforce Experience Cloud
 
@@ -30,3 +32,6 @@ All resources and final output for this part is in `theme-swticher-v1` branch.\
 
 No changes comitted, this part [Creating Portfolio Site in Salesforce Experience Cloud: Security Basics](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-security-mazo-fpvec) only discusses the security basics for this series.
 
+## Part 3: Creating Portfolio Site in Salesforce Experience Cloud: Components
+
+To begin this part of the series **Creating Portfolio Site in Salesforce Experience Cloud: Dark Mode**, clone `components-pre` branch `git clone -b components-pre https://github.com/solivervmazo/Salesforce-Portfolio.git`
