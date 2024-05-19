@@ -32,6 +32,6 @@ All resources and final output for this part is in `theme-swticher-v1` branch.\
 
 No changes comitted, this part [Creating Portfolio Site in Salesforce Experience Cloud: Security Basics](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-security-mazo-fpvec) only discusses the security basics for this series.
 
-## Part 3: Creating Portfolio Site in Salesforce Experience Cloud: Components
+## Part 4: Creating Portfolio Site in Salesforce Experience Cloud: Components
 
-To begin this part of the series **Creating Portfolio Site in Salesforce Experience Cloud: Dark Mode**, clone `components-pre` branch `git clone -b components-pre https://github.com/solivervmazo/Salesforce-Portfolio.git`
+To begin this part of the series **Creating Portfolio Site in Salesforce Experience Cloud: Components**, clone `components-pre` branch `git clone -b components-pre https://github.com/solivervmazo/Salesforce-Portfolio.git`
