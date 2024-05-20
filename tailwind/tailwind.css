@@ -175,23 +175,23 @@ p.sub-text1 {
   @apply font-general-medium text-white text-lg sm:text-xl;
 }
 
-/* icon link */
-.icon-link {
+/* App Icon Button */
+.app-icon-btn {
   @apply non-a-but-link flex flex-row justify-between gap-2 cursor-pointer;
 }
-.icon-link .p-type {
+.app-icon-btn .p-type {
   @apply flex items-center;
 }
-.icon-link > i {
+.app-icon-btn > i {
   @apply w-4;
 }
-.icon-link > span {
+.app-icon-btn > span {
   @apply font-general-medium leading-none;
 }
-.icon-link:is(.icon-link.small) > span {
+.app-icon-btn:is(.app-icon-btn.small) > span {
   font-size: 0.9rem;
 }
-.icon-link:is(.icon-link.small) > i {
+.app-icon-btn:is(.app-icon-btn.small) > i {
   font-size: 0.9rem;
 }
 
@@ -585,23 +585,16 @@ p.sub-text1 {
 .section-form > form .input-wrapper p.error {
   @apply text-red-500;
 }
-.form-input-wrapper-actual.wrapper,
-.section-form > form .input-wrapper > div.wrapper {
+.form-input-wrapper-actual.wrapper {
   @apply mt-2 flex gap-3;
 }
 .section-form.website-form > form .input-wrapper div.wrapper.actions {
   @apply flex gap-3;
 }
-.section-form.website-form
-  > form
-  .input-wrapper
-  div.wrapper:not(.wrapper.actions) {
-  @apply flex-col sm:flex-row;
+.form-input-wrapper-actual div.wrapper.actions {
+  @apply flex gap-3 justify-end;
 }
-.form-input-wrapper div.wrapper.actions,
-.section-form.website-form > form .input-wrapper div.wrapper.actions {
-  @apply justify-end;
-}
+
 select:where([data-error="error"]),
 textarea:where([data-error="error"]),
 input:where([data-error="error"])
@@ -681,12 +674,19 @@ textarea,
 .section-form > form > .actions-wrapper {
   @apply py-3 flex items-center justify-end gap-x-6;
 }
+.form-input-wrapper-actual .wrapper.actions label,
+.section-form > form label {
+  @apply cursor-pointer;
+}
+.form-input-wrapper-actual .wrapper.actions button.submit,
 .section-form > form button.submit {
   @apply rounded-md px-3 py-2 text-sm font-semibold text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
 }
+.form-input-wrapper-actual .wrapper.actions button.cancel,
 .section-form > form button.cancel {
   @apply text-sm non-a-but-link font-semibold leading-6 text-gray-900 dark:text-primary-light;
 }
+.form-input-wrapper-actual .wrapper.actions button.delete,
 .section-form > form button.delete {
   @apply rounded-md px-3 py-2 text-sm font-semibold text-white bg-red-500 hover:bg-red-600 focus:ring-1 focus:ring-red-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600;
 }

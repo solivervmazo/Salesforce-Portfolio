@@ -1,0 +1,85 @@
+<template>
+  <div class="section-form profile-form">
+    <form>
+      <div class="body-wrapper">
+        <div class="inner">
+          <div class="wrapper">
+            <c-app-form-input
+              class="input-wrapper input-span-double"
+              tag="first-name"
+              title="First name"
+              value={firstName}
+              required
+            ></c-app-form-input>
+            <c-app-form-input
+              class="input-wrapper input-span-double"
+              tag="last-name"
+              title="Last name"
+              value={lastName}
+              required
+            ></c-app-form-input>
+            <c-app-form-input
+              class="input-wrapper input-span-double"
+              tag="email"
+              title="Email address"
+              value={email}
+              required
+              disabled
+            ></c-app-form-input>
+            <c-app-form-input
+              input="checkbox"
+              class="input-wrapper input-span-tripple"
+              tag="email"
+              title="Public email"
+              description="Display email in contact details."
+            ></c-app-form-input>
+            <c-app-form-input
+              input="select"
+              class="input-wrapper input-span-double"
+              tag="country"
+              title="Country"
+              required
+            ></c-app-form-input>
+            <c-app-form-input
+              input="checkbox"
+              class="input-wrapper input-span-tripple"
+              tag="full-address"
+              title="Public address"
+              description="Display country only."
+              hint="By default, full address will be displayed in contact details."
+            ></c-app-form-input>
+            <c-app-form-input
+              class="input-wrapper input-span-full"
+              tag="street-address"
+              title="Street address"
+            ></c-app-form-input>
+            <c-app-form-input
+              class="input-wrapper input-span-tripple"
+              tag="city"
+              title="City"
+            ></c-app-form-input>
+            <c-app-form-input
+              class="input-wrapper input-span-tripple"
+              tag="state"
+              title="State / Province"
+            ></c-app-form-input>
+            <c-app-form-input
+              class="input-wrapper input-span-tripple"
+              tag="zip"
+              title="Zip / Postal Code"
+            ></c-app-form-input>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions-wrapper divider-bottom">
+        <button type="button" class="cancel">
+          <label>Cancel</label>
+        </button>
+        <button type="button" class="submit">
+          <label>Save</label>
+        </button>
+      </div>
+    </form>
+  </div>
+</template>

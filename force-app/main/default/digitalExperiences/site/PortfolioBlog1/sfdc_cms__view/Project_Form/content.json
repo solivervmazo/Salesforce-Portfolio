@@ -1,0 +1,94 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Project Form",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"80c786c7-c25b-4e32-a3d1-9b1cfd861687\",\"columns\":[{\"UUID\":\"3c420113-e6fe-465d-b330-42d5a6aec6a3\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "title" : "Project"
+              },
+              "children" : [ {
+                "id" : "5e51356d-ed10-4e44-a014-b2d303d6f1d4",
+                "name" : "banner",
+                "title" : "banner",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "title" : ""
+                  },
+                  "children" : [ {
+                    "children" : [ {
+                      "attributes" : { },
+                      "definition" : "c:projectForm",
+                      "id" : "2dd9cb62-7bb2-4f22-b64a-4558e7248f35",
+                      "type" : "component"
+                    } ],
+                    "id" : "1efd66b7-2a7f-491d-9779-066a87dab672",
+                    "name" : "content",
+                    "title" : "content",
+                    "type" : "region"
+                  } ],
+                  "definition" : "c:appFormLayout",
+                  "id" : "7c3c17a5-3e05-4615-b12a-90754d40e2f7",
+                  "type" : "component"
+                } ],
+                "id" : "087de7c8-6cd9-42e2-963d-3889286531d8",
+                "name" : "content",
+                "title" : "content",
+                "type" : "region"
+              } ],
+              "definition" : "c:contentLayout",
+              "id" : "25bfd857-abad-4f99-8b8f-1b3e5fee89d8",
+              "type" : "component"
+            } ],
+            "id" : "3c420113-e6fe-465d-b330-42d5a6aec6a3",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "80c786c7-c25b-4e32-a3d1-9b1cfd861687",
+          "type" : "component"
+        } ],
+        "id" : "32f9473f-e1f6-4bf4-9603-c2e05e6d9280",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Project Form",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "b3aea674-6a05-4a08-a7ed-abe101172778",
+          "type" : "component"
+        } ],
+        "id" : "553578e4-82fd-4a04-a7e4-592573b895c9",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "41350f08-939d-4c85-a641-bca7cf760e36",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-f"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "User Settings",
+  "contentBody" : {
+    "activeViewId" : "User_Settings",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-settings",
+    "urlPrefix" : "settings"
+  }
+}

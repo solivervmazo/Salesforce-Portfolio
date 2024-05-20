@@ -1,0 +1,15 @@
+<template>
+  <div class="form-input-wrapper">
+    <slot name="title">
+      <label for={tag} class="title">
+        <span if:true={computedRequired} class="required">*</span> {title}
+      </label>
+    </slot>
+    <slot></slot>
+    <p class="hint">
+      {hint}<span lwc:if={error} class="error">
+        <br lwc:if={hint} />{error}
+      </span>
+    </p>
+  </div>
+</template>

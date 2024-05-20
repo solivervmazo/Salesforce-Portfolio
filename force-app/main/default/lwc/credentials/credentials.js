@@ -1,10 +1,18 @@
 import { LightningElement, api } from "lwc";
 import ASSETS from "@salesforce/resourceUrl/PortfolioBlog";
 import { CREDENTIALS } from "c/myUtils";
+import CredentialsForm from "c/credentialForm";
 
 export default class Credentials extends LightningElement {
   @api featured = false;
   @api displayCount;
+
+  handleAdd() {
+    CredentialsForm.open({
+      label: "Credential",
+      size: "small"
+    });
+  }
 
   credentials;
   connectedCallback() {
