@@ -31,7 +31,7 @@ All resources and final output for this part is in `theme-swticher-v1` branch.\
 
 No changes comitted, this part [Creating Portfolio Site in Salesforce Experience Cloud: Security Basics](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-security-mazo-fpvec) only discusses the security basics for this series.
 
-## Part 2: Creating Portfolio Site in Salesforce Experience Cloud: Components
+## Part 4: Creating Portfolio Site in Salesforce Experience Cloud: Components
 
 **Pre**: Check `components-pre` branch `root/dev` directory to get the latest tailwind.css and new components. Download the directory or add it on your existing project for this series.
 
