@@ -24,6 +24,10 @@ export default class AppFormInput extends LightningElement {
   _error;
   _dirty;
 
+  /**
+   * overrides render()
+   * @returns LightningElement
+   */
   render() {
     switch (this.input) {
       case "checkbox":
@@ -44,6 +48,10 @@ export default class AppFormInput extends LightningElement {
     }
   }
 
+  /**
+   * @description Checks if the input is valid based on the required property and the current value. Sets the error message if validation fails.
+   * @returns {}
+   */
   _validated() {
     this._error =
       this.required && !this._value && this._dirty
@@ -52,6 +60,10 @@ export default class AppFormInput extends LightningElement {
     return this._inputDetail();
   }
 
+  /**
+   * @description Constructs an object containing details about the input, including the tag, value, and error.
+   * @returns {}
+   */
   _inputDetail() {
     return {
       tag: this.tag,
