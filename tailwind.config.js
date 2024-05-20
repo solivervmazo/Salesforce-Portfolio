@@ -14,13 +14,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary-light": "#F7F8FC",
-        "secondary-light": "#FFFFFF",
-        "ternary-light": "#f6f7f8",
-        "test-color": "var(--dxp-g-root)",
-        "primary-dark": "#0D2438",
-        "secondary-dark": "#102D44",
-        "ternary-dark": "#1E3851"
+        "primary-light": "var(--primary-light-color)",
+        "secondary-light": "var(--secondary-light-color)",
+        "ternary-light": "var(--ternary-light-color)",
+        "primary-dark": "var(--primary-dark-color)",
+        "secondary-dark": "var(--secondary-dark-color)",
+        "ternary-dark": "var(--ternary-dark-color)"
       }
     }
   }

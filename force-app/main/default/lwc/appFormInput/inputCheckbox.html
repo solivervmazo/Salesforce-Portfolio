@@ -1,0 +1,28 @@
+<template>
+  <c-app-base-input
+    title={title}
+    tag={tag}
+    hint={hint}
+    error={computedError}
+    required={required}
+  >
+    <div class="form-input-wrapper-actual wrapper checkbox-special-wrapper">
+      <div>
+        <input
+          id={tag}
+          name={tag}
+          type="checkbox"
+          value={computedBooleanValue}
+          data-error={computedIsError}
+          required={required}
+          disabled={disabled}
+          onchange={handleChange}
+          onblur={handleBlur}
+        />
+      </div>
+      <div>
+        <label for={tag} class="description"> {description} </label>
+      </div>
+    </div>
+  </c-app-base-input>
+</template>

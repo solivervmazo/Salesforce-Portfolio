@@ -1,0 +1,7 @@
+<template>
+  <div class={computedWrapper}>
+    <i lwc:if={leftIconClass} class={leftIconClass}></i>
+    <span><slot></slot></span>
+    <i lwc:if={rightIconClass} class={rightIconClass}></i>
+  </div>
+</template>

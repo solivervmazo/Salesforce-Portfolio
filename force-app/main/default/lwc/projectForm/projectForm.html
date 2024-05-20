@@ -1,0 +1,81 @@
+<template>
+  <c-iam-control>
+    <div class="control-header">
+      <div>
+        <c-app-icon-button left-icon-class="fa-solid fa-angle-left">
+          Cancel
+        </c-app-icon-button>
+      </div>
+      <div></div>
+    </div>
+  </c-iam-control>
+  <div class="section-form project-form">
+    <form>
+      <div class="body-wrapper">
+        <div class="inner">
+          <div class="wrapper">
+            <c-app-form-input
+              class="input-wrapper input-span-thirds"
+              tag="title"
+              title="Title"
+            ></c-app-form-input
+            ><c-app-form-input
+              input="checkbox"
+              class="input-wrapper input-span-tripple"
+              tag="visibility"
+              title="Publish project"
+              description="Post your project once finished."
+            ></c-app-form-input>
+            <c-app-form-input
+              class="input-wrapper input-span-thirds"
+              tag="title"
+              title="Tools & Technologies"
+            ></c-app-form-input>
+            <c-app-form-input
+              input="file"
+              multiple="true"
+              class="input-wrapper input-span-full col-start"
+              tag="project-images"
+              title="Gallery"
+              hint="PNG, JPG, GIF up to 10MB, Maximum of 3 images."
+            ></c-app-form-input>
+            <c-app-form-input
+              input="date"
+              class="input-wrapper input-span-tripple"
+              tag="date"
+              title="Project date"
+            ></c-app-form-input>
+            <c-app-form-input
+              input="textarea"
+              class="input-wrapper input-span-full"
+              tag="objective"
+              title="Objectives"
+              rows="3"
+            ></c-app-form-input>
+            <c-app-form-input
+              class="input-wrapper input-span-thirds"
+              tag="project-link"
+              title="Project link / Repository"
+            ></c-app-form-input>
+            <c-app-form-input
+              input="textarea"
+              class="input-wrapper input-span-full"
+              tag="readme"
+              title="Project details / Readme"
+              rows="15"
+            ></c-app-form-input>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions-wrapper">
+        <button type="button" class="cancel">
+          <label>Cancel</label>
+        </button>
+        <button type="buton" class="submit">
+          <label>Save</label>
+        </button>
+      </div>
+    </form>
+  </div>
+</template>

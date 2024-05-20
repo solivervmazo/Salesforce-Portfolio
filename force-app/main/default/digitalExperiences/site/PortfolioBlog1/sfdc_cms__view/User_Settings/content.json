@@ -1,0 +1,132 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "User Settings",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"e1a7c0d3-2f42-4e33-b753-9016d0df88ab\",\"columns\":[{\"UUID\":\"3ba78add-270e-4a33-ac7d-c6aaaed376de\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "title" : "User Settings"
+              },
+              "children" : [ {
+                "id" : "4eabf098-df6c-4b35-97bc-4fb915e54a86",
+                "name" : "banner",
+                "title" : "banner",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "title" : "Bio and Skills"
+                  },
+                  "children" : [ {
+                    "children" : [ {
+                      "attributes" : { },
+                      "definition" : "c:userBioSkillsForm",
+                      "id" : "1ad15354-ac7d-46c9-96a9-5c5e83ba5c9c",
+                      "type" : "component"
+                    } ],
+                    "id" : "122dc56e-5ea1-4d81-ba4f-0893f01521ed",
+                    "name" : "content",
+                    "title" : "content",
+                    "type" : "region"
+                  } ],
+                  "definition" : "c:appFormLayout",
+                  "id" : "15488559-445e-4e80-a57c-3d963c58d96b",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "title" : "Personal Information"
+                  },
+                  "children" : [ {
+                    "children" : [ {
+                      "attributes" : { },
+                      "definition" : "c:userProfileForm",
+                      "id" : "9f6434c3-2a2a-4baa-96a7-c50e4e1b4be9",
+                      "type" : "component"
+                    } ],
+                    "id" : "e010ba58-d01e-412e-b5fd-f829ab9bae76",
+                    "name" : "content",
+                    "title" : "content",
+                    "type" : "region"
+                  } ],
+                  "definition" : "c:appFormLayout",
+                  "id" : "d7280bc7-8dd5-4325-930e-2e8b6b84f058",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "title" : "Social Media / Websites"
+                  },
+                  "children" : [ {
+                    "children" : [ {
+                      "attributes" : { },
+                      "definition" : "c:userSocialForm",
+                      "id" : "a6135000-41d8-43b9-8a96-77dbae6205b8",
+                      "type" : "component"
+                    } ],
+                    "id" : "7f6c62c8-b62e-4424-bf46-128330a08298",
+                    "name" : "content",
+                    "title" : "content",
+                    "type" : "region"
+                  } ],
+                  "definition" : "c:appFormLayout",
+                  "id" : "271da61a-2cb0-43bd-80e7-ba6037301cbc",
+                  "type" : "component"
+                } ],
+                "id" : "8a1e189a-c2f7-4552-9edf-de0e396e574a",
+                "name" : "content",
+                "title" : "content",
+                "type" : "region"
+              } ],
+              "definition" : "c:contentLayout",
+              "id" : "464371bc-53a9-4a31-8174-8620ddcb8f57",
+              "type" : "component"
+            } ],
+            "id" : "3ba78add-270e-4a33-ac7d-c6aaaed376de",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "e1a7c0d3-2f42-4e33-b753-9016d0df88ab",
+          "type" : "component"
+        } ],
+        "id" : "3e43d342-07e1-4409-ab94-37cddee039af",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "User Settings",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "9e8db446-2807-454c-b845-529e75f6a9c4",
+          "type" : "component"
+        } ],
+        "id" : "9fea7042-d948-49a5-99ca-b099d01b6b71",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "0cd40fcf-fa86-42cb-86ab-1d486045e459",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-settings"
+  }
+}

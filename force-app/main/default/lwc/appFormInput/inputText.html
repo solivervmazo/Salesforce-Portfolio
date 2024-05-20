@@ -1,0 +1,34 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <c-app-base-input
+    title={title}
+    tag={tag}
+    hint={hint}
+    error={computedError}
+    required={required}
+  >
+    <div class="form-input-wrapper-actual wrapper">
+      <textarea
+        lwc:if={computedIsTextArea}
+        id={tag}
+        name={tag}
+        rows={rows}
+        data-error={computedIsError}
+        disabled={disabled}
+      >
+            {computedTextValue}
+        </textarea
+      >
+      <input
+        lwc:else
+        id={tag}
+        name={tag}
+        value={computedTextValue}
+        data-error={computedIsError}
+        disabled={disabled}
+        onchange={handleChange}
+        onblur={handleBlur}
+      />
+    </div>
+  </c-app-base-input>
+</template>

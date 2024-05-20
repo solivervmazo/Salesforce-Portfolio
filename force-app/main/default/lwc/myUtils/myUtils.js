@@ -1,3 +1,39 @@
+export const SOCIAL_URLS = [
+  {
+    id: 1,
+    url: "https://www.linkedin.com/"
+  },
+  {
+    id: 2,
+    url: "https://www.facebook.com/"
+  },
+  {
+    id: 3,
+    url: "https://github.com/"
+  }
+];
+
+export const SOCIALS = [
+  {
+    id: 1,
+    name: "LinkedIn",
+    slug: "www.linkedin.com",
+    icon: "fa-brands fa-linkedin-in"
+  },
+  {
+    id: 2,
+    name: "Facebook",
+    slug: "facebook.com",
+    icon: "fa-brands fa-square-facebook"
+  },
+  {
+    id: 3,
+    name: "GitHub",
+    slug: "github.com",
+    icon: "fa-brands fa-square-github"
+  }
+];
+
 export const SOCIAL_SHARES = [
   {
     id: 1,
