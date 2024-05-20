@@ -12,6 +12,7 @@ All resources and latest output for this series is in `integration` branch.
 - [Creating Portfolio Site in Salesforce Experience Cloud](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-soliver-mazo-8hdrc)
 - [Creating Portfolio Site in Salesforce Experience Cloud: Dark Mode](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-dark-soliver-mazo-kl3jc)
 - [Creating Portfolio Site in Salesforce Experience Cloud: Security Basics](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-security-mazo-fpvec)
+- [Creating Portfolio Site in Salesforce Experience Cloud: Components](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-components-mazo-ro7mc)
 
 ## Part 1: Creating Portfolio Site in Salesforce Experience Cloud
 
@@ -30,3 +31,10 @@ All resources and final output for this part is in `theme-swticher-v1` branch.\
 
 No changes comitted, this part [Creating Portfolio Site in Salesforce Experience Cloud: Security Basics](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-security-mazo-fpvec) only discusses the security basics for this series.
 
+## Part 2: Creating Portfolio Site in Salesforce Experience Cloud: Components
+
+**Pre**: Check `components-pre` branch `root/dev` directory to get the latest tailwind.css and new components. Download the directory or add it on your existing project for this series.
+
+To begin this part of the series [Creating Portfolio Site in Salesforce Experience Cloud: Components](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-components-mazo-ro7mc), clone `theme-swticher-v1` branch `git clone -b theme-swticher-v1 https://github.com/solivervmazo/Salesforce-Portfolio.git`, make sure that you're cloning the **theme-swticher-v1** branch to follow along with this part of the series. Alternatively, you can read the first part of this series and start from there.
+
+All resources and final output for this part is in `components-v1` branch.
