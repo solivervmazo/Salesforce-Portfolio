@@ -1,22 +1,25 @@
 <template>
   <div class="footer-section">
-    <!-- Footer social links -->
-    <div class="content-main">
-      <div class="footer-social-container">
-        <p class="greeting">Follow me</p>
-        <ul class="social-list">
-          <template for:each={socmeds} for:item="socmed">
-            <a key={socmed.id} target="_blank" class="social-item">
-              <div class="social-item-icon">
-                <i class={socmed.icon}> </i>
-              </div>
-            </a>
-          </template>
-        </ul>
+    <c-iam-control public-content>
+      <!-- Footer social links -->
+      <div class="content-main">
+        <div class="footer-social-container">
+          <p class="greeting">Follow me</p>
+          <ul class="social-list">
+            <template for:each={socmeds} for:item="socmed">
+              <a key={socmed.id} target="_blank" class="social-item">
+                <div class="social-item-icon">
+                  <i class={socmed.icon}> </i>
+                </div>
+              </a>
+            </template>
+          </ul>
+        </div>
       </div>
-    </div>
+    </c-iam-control>
     <div class="foot-note-container">
       <div class="foot-note">&copy; 2024 &nbsp;-&nbsp; Soliver Mazo.</div>
     </div>
   </div>
+</c-iam-control>
 </template>

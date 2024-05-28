@@ -1,0 +1,19 @@
+<template>
+  <c-iam-control public-content show-partial-redirect>
+    <c-content-layout>
+      <div slot="content">
+        <c-section-layout>
+          <c-about-me slot="content"></c-about-me>
+        </c-section-layout>
+        <c-section-layout title="Certificates">
+          <c-credentials slot="content" featured> </c-credentials>
+          <c-app-button
+            slot="actions"
+            title="View More"
+            href="/credentials"
+          ></c-app-button>
+        </c-section-layout>
+      </div>
+    </c-content-layout>
+  </c-iam-control>
+</template>

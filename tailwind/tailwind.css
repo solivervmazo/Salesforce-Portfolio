@@ -695,3 +695,17 @@ textarea,
 .control-header {
   @apply w-full py-2 flex flex-row justify-between mb-3 general-padding;
 }
+
+/* Alert Message */
+.alert-message {
+  @apply border-l-4  p-4;
+}
+.alert-message p.title {
+  @apply font-bold;
+}
+.alert-message.alert-warn {
+  @apply bg-orange-100 border-orange-500 text-orange-700;
+}
+.alert-message.alert-warn a {
+  @apply text-primary-dark dark:text-primary-dark dark:hover:text-primary-dark;
+}

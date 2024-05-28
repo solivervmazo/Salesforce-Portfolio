@@ -1,22 +1,26 @@
 <template>
   <section class="banner-section">
-    <!-- Banner right bg -->
-    <div class="banner-img-container">
-      <img class="banner-img" src={companyBanner} alt="Developer" />
-    </div>
-    <div class="banner-overlay-container">
-      <div class="content">
-        <!-- Banner left contents -->
-        <div class="content-left">
-          <h1 class="greeting">Hi, I'm Soliver</h1>
-          <p class="job-title">Data Analyst</p>
+    <c-iam-control public-content>
+      <!-- Banner right bg -->
+      <div class="banner-img-container">
+        <img class="banner-img" src={companyBanner} alt="Developer" />
+      </div>
+      <div class="banner-overlay-container">
+        <div class="content">
+          <!-- Banner left contents -->
+          <div class="content-left">
+            <h1 class="greeting">Hi, I'm Soliver</h1>
+            <p class="job-title">Data Analyst</p>
+          </div>
+        </div>
+        <div class="skill-highlight-container typewriter">
+          <p>
+            SQL • PYTHON • TABLEAU • GOOGLE SHEETS<span class="typer_end"
+              >.</span
+            >
+          </p>
         </div>
       </div>
-      <div class="skill-highlight-container typewriter">
-        <p>
-          SQL • PYTHON • TABLEAU • GOOGLE SHEETS<span class="typer_end">.</span>
-        </p>
-      </div>
-    </div>
+    </c-iam-control>
   </section>
 </template>

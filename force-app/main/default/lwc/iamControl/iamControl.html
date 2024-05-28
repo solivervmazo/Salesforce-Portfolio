@@ -1,5 +1,18 @@
 <template>
-  <template lwc:if={allowed}>
+  <template lwc:if={isForbidden}>
+    <div
+      lwc:if={isShowPartialMessage}
+      class="alert-message alert-warn"
+      role="alert"
+    >
+      <p class="title">Profile Incomplete</p>
+      <p>
+        Please finish setting up your profile.
+        <a href="/setup">Complete Registration</a>
+      </p>
+    </div>
+  </template>
+  <template lwc:else>
     <slot></slot>
   </template>
 </template>

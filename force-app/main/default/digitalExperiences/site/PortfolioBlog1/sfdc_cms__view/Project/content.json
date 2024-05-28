@@ -25,37 +25,9 @@
                 "type" : "region"
               }, {
                 "children" : [ {
-                  "attributes" : {
-                    "title" : ""
-                  },
-                  "children" : [ {
-                    "children" : [ {
-                      "attributes" : { },
-                      "definition" : "c:project",
-                      "id" : "86a4dd76-de48-4f85-8e50-0d337f257aae",
-                      "type" : "component"
-                    } ],
-                    "id" : "e4dcd8a2-b59d-4221-bada-4a8468506378",
-                    "name" : "content",
-                    "title" : "content",
-                    "type" : "region"
-                  }, {
-                    "children" : [ {
-                      "attributes" : {
-                        "href" : "/projects",
-                        "title" : "Projects"
-                      },
-                      "definition" : "c:appButton",
-                      "id" : "edddfd97-af98-486b-9950-603a54b80a94",
-                      "type" : "component"
-                    } ],
-                    "id" : "ae48cbb6-8df2-4545-ae3a-aed8c975780e",
-                    "name" : "actions",
-                    "title" : "actions",
-                    "type" : "region"
-                  } ],
-                  "definition" : "c:sectionLayout",
-                  "id" : "2ddf542b-0f76-4418-9466-cd5a39f01265",
+                  "attributes" : { },
+                  "definition" : "c:screenProject",
+                  "id" : "934bea23-f72f-4b15-8078-491786d4a348",
                   "type" : "component"
                 } ],
                 "id" : "9cb729b1-294b-48d2-8c8c-c330cfb0e02a",
