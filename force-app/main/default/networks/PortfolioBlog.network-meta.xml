@@ -35,16 +35,18 @@
     <headlessRegistrationTemplate>unfiled$public/CommunityHeadlessRegistrationTemplate</headlessRegistrationTemplate>
     <networkMemberGroups>
         <profile>admin</profile>
+        <profile>Portfolio Site User</profile>
     </networkMemberGroups>
     <networkPageOverrides>
         <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
-        <forgotPasswordPageOverrideSetting>Designer</forgotPasswordPageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Standard</forgotPasswordPageOverrideSetting>
         <homePageOverrideSetting>Designer</homePageOverrideSetting>
-        <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
-        <selfRegProfilePageOverrideSetting>Designer</selfRegProfilePageOverrideSetting>
+        <loginPageOverrideSetting>Standard</loginPageOverrideSetting>
+        <selfRegProfilePageOverrideSetting>Standard</selfRegProfilePageOverrideSetting>
     </networkPageOverrides>
     <picassoSite>PortfolioBlog1</picassoSite>
-    <selfRegistration>false</selfRegistration>
+    <selfRegProfile>Portfolio Site User</selfRegProfile>
+    <selfRegistration>true</selfRegistration>
     <sendWelcomeEmail>true</sendWelcomeEmail>
     <site>PortfolioBlog</site>
     <siteArchiveStatus>NotArchived</siteArchiveStatus>

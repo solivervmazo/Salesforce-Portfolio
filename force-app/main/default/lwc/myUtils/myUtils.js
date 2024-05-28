@@ -1289,3 +1289,19 @@ export function getProject(projectId) {
 export function getReadme(projectId) {
   return README.find((x) => x.id === projectId) ?? false;
 }
+
+export {
+  HOME_PAGE,
+  ERROR_PAGE,
+  LOGIN_PAGE,
+  REGISTRATION_PAGE,
+  REGISTRATION_SETUP_PAGE,
+  FORGOT_PASSWORD_PAGE,
+  PROJECTS_PAGE,
+  PROJECT_PAGE,
+  ABOUT_PAGE,
+  CONTACT_PAGE,
+  CREDENTIALS_PAGE,
+  PROJECT_FORM_PAGE,
+  USER_SETTINGS_PAGE
+} from "./navigation.js";

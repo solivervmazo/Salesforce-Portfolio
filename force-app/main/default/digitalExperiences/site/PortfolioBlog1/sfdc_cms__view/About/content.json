@@ -25,64 +25,9 @@
                 "type" : "region"
               }, {
                 "children" : [ {
-                  "attributes" : {
-                    "title" : ""
-                  },
-                  "children" : [ {
-                    "children" : [ {
-                      "attributes" : { },
-                      "definition" : "c:aboutMe",
-                      "id" : "9641560b-4e75-46e7-b104-f558c5e990af",
-                      "type" : "component"
-                    } ],
-                    "id" : "fce623a5-3b66-46bc-b3e6-756e9c1c4bae",
-                    "name" : "content",
-                    "title" : "content",
-                    "type" : "region"
-                  }, {
-                    "id" : "ec4aac86-9d5c-4046-8bcf-b015e2630551",
-                    "name" : "actions",
-                    "title" : "actions",
-                    "type" : "region"
-                  } ],
-                  "definition" : "c:sectionLayout",
-                  "id" : "c65c37aa-0e50-464d-924e-d82111a099eb",
-                  "type" : "component"
-                }, {
-                  "attributes" : {
-                    "title" : "Certificates"
-                  },
-                  "children" : [ {
-                    "children" : [ {
-                      "attributes" : {
-                        "displayCount" : 4,
-                        "featured" : true
-                      },
-                      "definition" : "c:credentials",
-                      "id" : "c93c25e9-ec61-4061-b9a9-b58bc4c7d397",
-                      "type" : "component"
-                    } ],
-                    "id" : "3389dd8d-78ca-474b-ae65-c70483003065",
-                    "name" : "content",
-                    "title" : "content",
-                    "type" : "region"
-                  }, {
-                    "children" : [ {
-                      "attributes" : {
-                        "href" : "/credentials",
-                        "title" : "View More"
-                      },
-                      "definition" : "c:appButton",
-                      "id" : "7a59942a-aea8-47d5-8534-c40b98e56296",
-                      "type" : "component"
-                    } ],
-                    "id" : "06c2778d-2ba8-4c22-a1a6-d0c9b6485ddc",
-                    "name" : "actions",
-                    "title" : "actions",
-                    "type" : "region"
-                  } ],
-                  "definition" : "c:sectionLayout",
-                  "id" : "a03f900e-1cec-4c37-bd4d-702e828f0d53",
+                  "attributes" : { },
+                  "definition" : "c:screenAboutMe",
+                  "id" : "dd08c9ca-5adb-49e0-a981-134c1ecd77a5",
                   "type" : "component"
                 } ],
                 "id" : "e1d6fe31-5f8c-4981-9300-e60196e14f3d",

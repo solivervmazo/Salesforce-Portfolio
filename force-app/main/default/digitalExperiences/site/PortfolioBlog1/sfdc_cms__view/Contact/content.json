@@ -25,28 +25,9 @@
                 "type" : "region"
               }, {
                 "children" : [ {
-                  "attributes" : {
-                    "title" : ""
-                  },
-                  "children" : [ {
-                    "children" : [ {
-                      "attributes" : { },
-                      "definition" : "c:contactMe",
-                      "id" : "d83a026a-9476-42ca-aed0-f4566ea2ca86",
-                      "type" : "component"
-                    } ],
-                    "id" : "34a8e34a-3388-4f78-9ba3-5bb15b2e716e",
-                    "name" : "content",
-                    "title" : "content",
-                    "type" : "region"
-                  }, {
-                    "id" : "aff8a64b-1bf8-4aa1-b446-4a9364a55db1",
-                    "name" : "actions",
-                    "title" : "actions",
-                    "type" : "region"
-                  } ],
-                  "definition" : "c:sectionLayout",
-                  "id" : "42b50d21-3f47-40bd-bb7f-20b80a4918b5",
+                  "attributes" : { },
+                  "definition" : "c:screenContactMe",
+                  "id" : "a6c6368e-196c-47de-b995-bae6ffc423bb",
                   "type" : "component"
                 } ],
                 "id" : "b6591f2a-3d6f-420f-b445-0b3cb585722b",

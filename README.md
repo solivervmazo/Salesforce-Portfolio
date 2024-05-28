@@ -13,6 +13,7 @@ All resources and latest output for this series is in `integration` branch.
 - [Creating Portfolio Site in Salesforce Experience Cloud: Dark Mode](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-dark-soliver-mazo-kl3jc)
 - [Creating Portfolio Site in Salesforce Experience Cloud: Security Basics](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-security-mazo-fpvec)
 - [Creating Portfolio Site in Salesforce Experience Cloud: Components](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-components-mazo-ro7mc)
+- [Creating Portfolio Site in Salesforce Experience Cloud: Authentication and Navigation](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-navigation-mazo-lpmge)
 
 ## Part 1: Creating Portfolio Site in Salesforce Experience Cloud
 
@@ -38,3 +39,9 @@ No changes comitted, this part [Creating Portfolio Site in Salesforce Experience
 To begin this part of the series [Creating Portfolio Site in Salesforce Experience Cloud: Components](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-components-mazo-ro7mc), clone `theme-swticher-v1` branch `git clone -b theme-swticher-v1 https://github.com/solivervmazo/Salesforce-Portfolio.git`, make sure that you're cloning the **theme-swticher-v1** branch to follow along with this part of the series. Alternatively, you can read the first part of this series and start from there.
 
 All resources and final output for this part is in `components-v1` branch.
+
+## Part 5: Creating Portfolio Site in Salesforce Experience Cloud: Authentication and Navigation
+
+To begin this part of the series [Creating Portfolio Site in Salesforce Experience Cloud: Components](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-components-mazo-ro7mc), clone `components-v1` branch `git clone -b components-v1 https://github.com/solivervmazo/Salesforce-Portfolio.git`, make sure that you're cloning the **components-v1** branch to follow along with this part of the series. Alternatively, you can read the first part of this series and start from there.
+
+All resources and final output for this part is in `auth-nav-v1` branch.

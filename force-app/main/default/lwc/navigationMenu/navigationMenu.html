@@ -1,10 +1,9 @@
-<!-- sldsValidatorIgnore -->
 <template>
+  <c-iam-control onload={handleIam}></c-iam-control>
   <div class="nav-container">
     <div class="nav-container-mobile">
       <div>
         <a href="/">
-          <!-- sldsValidatorIgnoreNextLine -->
           <img class="logo-width" alt="Company logo" src={companyLogo} />
         </a>
       </div>
@@ -12,19 +11,55 @@
       <div class="nav-mobile-actions">
         <slot name="menu-mobile"></slot>
         <button onclick={toggleMenu}>
-          <i class="fa-solid fa-bars"></i>
+          <label><i class="fa-solid fa-bars"></i></label>
         </button>
       </div>
     </div>
     <div class={menuClass}>
-      <a href="/projects" class="nav-items" aria-label="Projects">Projects</a
-      ><a href="/about" class="nav-items" aria-label="About Me">About Me</a
-      ><a href="/contact" class="nav-items" aria-label="Contact">Contact</a
-      ><a href="/credentials" class="nav-items" aria-label="Credentials"
-        >Credentials</a
+      <a
+        for:each={pages}
+        for:item="page"
+        key={page.key}
+        href={page.url}
+        class="nav-items"
+        aria-label={page.title}
       >
+        {page.title}
+      </a>
+      <div class="menu-footer">
+        <div class="user-menu">
+          <template lwc:if={authenticated}>
+            <div>
+              <a href={logoutLink} class="user-or-login">Logout</a>
+            </div>
+            <div>
+              <c-app-icon-button
+                right-icon-class="fa-solid fa-user"
+                onclick={handleNavigateToSettings}
+              >
+              </c-app-icon-button>
+            </div>
+          </template>
+          <template lwc:else>
+            <div>
+              <a href="/login" class="user-or-login">Login</a>
+            </div>
+          </template>
+        </div>
+      </div>
     </div>
     <div class="nav-actions">
+      <template lwc:if={authenticated}>
+        <a href={logoutLink} class="user-or-login">Logout</a>
+        <c-app-icon-button
+          right-icon-class="fa-solid fa-user"
+          onclick={handleNavigateToSettings}
+        >
+        </c-app-icon-button>
+      </template>
+      <div lwc:else>
+        <a href="/login" class="user-or-login">Login</a>
+      </div>
       <slot name="menu"></slot>
     </div>
   </div>
