@@ -13,6 +13,7 @@ All resources and latest output for this series is in `integration` branch.
 - [Creating Portfolio Site in Salesforce Experience Cloud: Dark Mode](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-dark-soliver-mazo-kl3jc)
 - [Creating Portfolio Site in Salesforce Experience Cloud: Security Basics](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-security-mazo-fpvec)
 - [Creating Portfolio Site in Salesforce Experience Cloud: Components](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-components-mazo-ro7mc)
+- [Creating Portfolio Site in Salesforce Experience Cloud: Authentication and Navigation](https://www.linkedin.com/pulse/creating-portfolio-site-salesforce-experience-cloud-navigation-mazo-lpmge)
 
 ## Part 1: Creating Portfolio Site in Salesforce Experience Cloud
 
